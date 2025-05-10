@@ -1,133 +1,94 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookOpen, faBullseye, faChartArea, faGlobe, faHeadset, faMoneyBillTransfer, faMoneyCheckDollar, faSeedling, faWallet, faWifi } from '@fortawesome/free-solid-svg-icons';
 
-const Services = () => {
+const service = [
+    {
+        servicename: "Financial Planning",
+        description: "We provide personalized financial planning tools",
+        serviceicon: <FontAwesomeIcon icon={faChartArea} />,
+    },
+
+    {
+        servicename: "Strategic Savings",
+        description: "Customized savings plans with competitive interest rate",
+        serviceicon: <FontAwesomeIcon icon={faBullseye} />,
+    },
+
+    {
+        servicename: "Global Transaction",
+        description: "Secure and low cost transactions globally.",
+        serviceicon: <FontAwesomeIcon icon={faGlobe} />,
+    },
+
+    {
+        servicename: "Airtime and Data",
+        description: "Purchase airtime and data with ease.",
+        serviceicon: <FontAwesomeIcon icon={faWifi} />,
+    },
+
+    {
+        servicename: "Currency Conversions",
+        description: "Convert currencies easily.",
+        serviceicon: <FontAwesomeIcon icon={faMoneyBillTransfer} />,
+    },
+
+    {
+        servicename: "Loan Services",
+        description: "Access Loans with flexible repayment term.",
+        serviceicon: <FontAwesomeIcon icon={faMoneyCheckDollar} />,
+    },
+
+    {
+        servicename: "Budget & Expense Tracking",
+        description: "Track your expenses",
+        serviceicon: <FontAwesomeIcon icon={faWallet} />,
+    },
+
+    {
+        servicename: "Savings Plans",
+        description: "Manage multiple savings plans.",
+        serviceicon: <FontAwesomeIcon icon={faSeedling} />,
+    },
+
+    {
+        servicename: "Financial Education",
+        description: "Improve your financial literacy with our financial education.",
+        serviceicon: <FontAwesomeIcon icon={faBookOpen} />,
+    },
+
+    {
+        servicename: "Security and Support",
+        description: "Two factor authentication to secure your account.",
+        serviceicon: <FontAwesomeIcon icon={faHeadset} />,
+    },
+];
+
+
+
+const servicesection = service.map(services =>
+    <div className='w-[250px] mt-8 ml-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'>
+        <div className='text-center flex flex-col items-center text-white pt-6'>
+            <span className='text-[20px]'>
+                {services.serviceicon}
+            </span>
+            <h2 className='text-[17px] font-semibold'>{services.servicename}</h2>
+            <p className='text-[15px]'>{services.description}</p>
+        </div>
+        <div className='w-[80px] h-[2px] bg-white mb-2'></div>
+    </div>
+)
+
+
+const Test = () => {
   return (
     <div className='w-full mt-20'>
         <h1 className='text-center font-bold text-[55px] text-[#5c07B7]'>Our Services</h1>
-
-        <div className='iw-[100%] flex flex-col items-center'>
-
-      {/* First Section */}          
-        <div>
-          <div className='flex w-[100%] justify-center mt-16 pb-16'>
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-        </div>
-          </div>
-
-        {/* Second row */}
-        <div className='mt-[-25px]'>
-          <div className='flex w-[100%] justify-center mt-16 pb-16'>
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>                       
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-
-
-          <div className='flex h-[60px] w-auto ml-4 '>
-            <div>
-                <span className='text-[30px] font-semibold text-[#5c07B7]'>$</span>
-            </div>
-            <div className='flex flex-col ml-2'>
-              <h1 className='text-[20px] font-semibold '>Financial planning.</h1>
-              <p className='text-gray-700'>Lorem ipsum dolor sit amet, <br />   consectetu culpa</p>  
-            </div>  
-          </div>
-        </div>
-          </div>
-        </div>
-        
+        <div className='w-[95%] grid grid-cols-5'>
+          {servicesection}
+      </div>
     </div>
   )
 }
 
-export default Services;
+export default Test
