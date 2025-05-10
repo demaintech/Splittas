@@ -10,8 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://demaintech.github.io/Splittas"
-
+    "homepage": "https://demaintech.github.io/Splittas/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
