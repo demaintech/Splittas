@@ -13,19 +13,19 @@ const HowItWorks = () => {
                     <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[50%] my-auto'>
-                    <h4 className='text-[25px] font-semibold'>01</h4>
-                    <h1 className='text-[28px] font-semibold'>Sign up</h1>
-                    <p className='w-[60%] text-[18px]/7 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
-                    <button className='w-[120px] h-[37px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[14px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <h4 className='text-[25px] font-bold'>01</h4>
+                    <h1 className='text-[29px] font-bold'>Sign up</h1>
+                    <p className='w-[60%] text-[18px]/7 font-semibold text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
             </div>
 
             <div className='w-full flex justify-center'>
                 <div className='w-[50%] my-auto text-left pl-24'>
-                    <h4 className='text-[25px] font-semibold'>01</h4>
-                    <h1 className='text-[28px] font-semibold'>Sign up</h1>
-                    <p className='w-[60%] text-[18px]/7 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
-                    <button className='w-[120px] h-[37px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[14px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <h4 className='text-[25px] font-bold'>01</h4>
+                    <h1 className='text-[29px] font-bold'>Sign up</h1>
+                    <p className='w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
 
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
@@ -38,19 +38,19 @@ const HowItWorks = () => {
                     <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[50%] my-auto'>
-                    <h4 className='text-[25px] font-semibold'>01</h4>
-                    <h1 className='text-[28px] font-semibold'>Sign up</h1>
-                    <p className='w-[60%] text-[18px]/7 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
-                    <button className='w-[120px] h-[37px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[14px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <h4 className='text-[25px] font-bold'>01</h4>
+                    <h1 className='text-[29px] font-bold'>Sign up</h1>
+                    <p className='w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
             </div>
 
             <div className='w-full flex justify-center'>
                 <div className='w-[50%] my-auto text-left pl-24'>
-                    <h4 className='text-[25px] font-semibold'>01</h4>
-                    <h1 className='text-[28px] font-semibold'>Sign up</h1>
-                    <p className='w-[60%] text-[18px]/7 text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
-                    <button className='w-[120px] h-[37px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[14px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <h4 className='text-[25px] font-bold'>01</h4>
+                    <h1 className='text-[29px] font-bold'>Sign up</h1>
+                    <p className='w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
 
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
