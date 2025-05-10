@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='w-[100%] flex justify-evenly'>
             <div className='pt-8'>
                 <div className='w-[110px] h-[100px]'>
-                    <img src="/src/assets/footer.png" alt="" />
+                    <img src="/Splittas/assets/footer.png" alt="" />
                 </div>
             </div>
             <div className='pt-8'>

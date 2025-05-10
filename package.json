@@ -9,8 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://demaintech.github.io/Splittas/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
