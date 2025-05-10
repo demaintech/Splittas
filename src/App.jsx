@@ -12,7 +12,6 @@ import GetStarted from './components/GetStarted';
 import Contact from './components/Contact';
 import Subscribe from './components/Subscribe';
 import Footer from './components/Footer';
-import Test from './Test';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
