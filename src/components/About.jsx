@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className='w-full flex justify-center mt-20 gap-4'>
         <div className='w-[45%] h-[400px]'>
-            <img src={'/assets/about.png'} alt="" className='w-auto h-auto '/>
+            <img src={'assets/about.png'} alt="" className='w-auto h-auto '/>
         </div>
         <div className='w-[45%] my-auto'>
             <h5 className='text-gray-600 text-[20px] font-semibold'>Who we are</h5>
