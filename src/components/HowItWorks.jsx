@@ -10,7 +10,7 @@ const HowItWorks = () => {
         <div className='flex flex-col '>
             <div className='w-full flex justify-center'>
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[50%] my-auto'>
                     <h4 className='text-[25px] font-bold'>01</h4>
@@ -29,13 +29,13 @@ const HowItWorks = () => {
                 </div>
 
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
             </div>
 
             <div className='w-full flex justify-center'>
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[50%] my-auto'>
                     <h4 className='text-[25px] font-bold'>01</h4>
@@ -54,7 +54,7 @@ const HowItWorks = () => {
                 </div>
 
                 <div className='w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src={'/src/assets/fin.png'} alt="" className='w-auto h-auto '/>
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
             </div>
         </div>
