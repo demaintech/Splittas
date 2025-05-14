@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 const Footer = () => {
+    // [#0A3161]
   return (
-    <div className='w-full h-[570px] bg-[#0A3161] flex flex-col justify-between'>
-        <div className='w-[100%] flex justify-evenly'>
-            <div className='pt-8'>
-                <div className='w-[110px] h-[100px]'>
+    <div className='w-full h-auto bg-[#0A3161] flex flex-col justify-between'>
+        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0'>
+            <div className='pt-8 pr-12'>
+                <div className='w-[110px] h-[100px] flex items-center -ml-8'>
                     <img src="/Splittas/assets/footer.png" alt="" />
+                    <h2 className='text-[26px] text-white font-bold -ml-4'>Splittas</h2>
                 </div>
             </div>
             <div className='pt-8'>

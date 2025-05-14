@@ -67,13 +67,13 @@ const service = [
 
 
 const servicesection = service.map(services =>
-    <div className='w-[250px] mt-8 ml-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'>
+    <div className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'>
         <div className='text-center flex flex-col items-center text-white pt-6'>
             <span className='text-[20px]'>
                 {services.serviceicon}
             </span>
             <h2 className='text-[17px] font-semibold'>{services.servicename}</h2>
-            <p className='text-[15px]'>{services.description}</p>
+            <p className='text-[15px] w-[90%]'>{services.description}</p>
         </div>
         <div className='w-[80px] h-[2px] bg-white mb-2'></div>
     </div>
@@ -83,8 +83,8 @@ const servicesection = service.map(services =>
 const Test = () => {
   return (
     <div className='w-full mt-20'>
-        <h1 className='text-center font-bold text-[55px] text-[#5c07B7]'>Our Services</h1>
-        <div className='w-[95%] grid grid-cols-5'>
+        <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>Our Services</h1>
+        <div className='w-[100%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
           {servicesection}
       </div>
     </div>

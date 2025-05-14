@@ -4,10 +4,10 @@ import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons'
 
 const GetStarted = () => {
   return (
-    <div className='flex justify-between w-full mt-16 pb-16'>
-        <div className='w-[50%] flex flex-col pl-12'>
-            <h2 className='text-[55px] font-bold'><span className='text-[#5c07B7]'>Plan</span> and Manage your <span className='text-[#5c07B7]'>Finances</span> with us.</h2>
-            <p className='text-[28px] font-bold'>Download our app and get started <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></p>
+    <div className='flex flex-col lg:flex-row justify-between w-full mt-16 pb-16'>
+        <div className='w-[100%] lg:w-[50%] flex flex-col pl-4 lg:pl-12'>
+            <h2 className='text-[35px] lg:text-[55px] font-bold'><span className='text-[#5c07B7]'>Plan</span> and Manage your <span className='text-[#5c07B7]'>Finances</span> with us.</h2>
+            <p className='text-[20px] lg:text-[28px] font-bold'>Download our app and get started <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></p>
             <div className='flex text-white gap-4 mt-8'>
                 <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faAndroid} /> Android</button>
                 <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faApple} /> IOS</button>
