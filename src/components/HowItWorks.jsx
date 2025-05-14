@@ -13,18 +13,18 @@ const HowItWorks = () => {
                     <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto -z-20000000'/>
                 </div>
                 <div className='w-[100%] lg:w-[50%] my-auto pl-4'>
-                    <h4 className='text-[25px] font-bold'>01</h4>
-                    <h1 className='text-[29px] font-bold'>Sign up</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 font-semibold text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <h4 className='text-[25px] font-bold text-[#27AAE1]'>01</h4>
+                    <h1 className='text-[29px] font-bold'>Create your account</h1>
+                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 font-semibold text-gray-600'>Getting started is quick and easy. Simply signup using your email or phone number, and set a secure password. Once you're in, you'll be welcomed with a smooth onboarding experience that guides you step by step.</p>
                     <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
             </div>
 
             <div className='w-full flex flex-col-reverse lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] my-auto text-left pl-4 lg:pl-24'>
-                    <h4 className='text-[25px] font-bold'>01</h4>
-                    <h1 className='text-[29px] font-bold'>Sign up</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <h4 className='text-[25px] font-bold text-[#27AAE1]'>02</h4>
+                    <h1 className='text-[29px] font-bold'>Open an account in any currency</h1>
+                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Our app gives you the flexibility to open a financial account in your preferred currency - whether it's USD, EUR, GBP, NGN, or others. This  feature makes it easier to manage your finances locally or internaionally all from one place.</p>
                     <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
 
@@ -38,18 +38,18 @@ const HowItWorks = () => {
                     <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[100%] lg:w-[50%] my-auto pl-4'>
-                    <h4 className='text-[25px] font-bold'>01</h4>
-                    <h1 className='text-[29px] font-bold'>Sign up</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <h4 className='text-[25px] font-bold text-[#27AAE1]'>03</h4>
+                    <h1 className='text-[29px] font-bold'>Set and Manage Savings Plan</h1>
+                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Define your financial goals- whether it's savings for a trip, emergency funds, or big purchase. You can create multiple savings plans, set targets amounts, deadline, and track your progress overtime. We also send friendly reminders and insights to keep you motivated and consistend.</p>
                     <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
             </div>
 
             <div className='w-full flex flex-col-reverse lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] my-auto text-left pl-4 lg:pl-24'>
-                    <h4 className='text-[25px] font-bold'>01</h4>
-                    <h1 className='text-[29px] font-bold'>Sign up</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam voluptatum perferendis est delectus! Pariatur voluptatem repellendus libero cum eos quasi deserunt dolorum laboriosam minus, distinctio, ea soluta architecto deleniti.</p>
+                    <h4 className='text-[25px] font-bold text-[#27AAE1]'>04</h4>
+                    <h1 className='text-[29px] font-bold'>Access Powerful Financial Tools</h1>
+                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Once your account is set up, you'll unlock all app features. Access personalized financial tips, budgets planning tools, spending analysis, and smart suggestions tailored to your habits - everything you need to make better money decisions and build stronger financial future.</p>
                     <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                 </div>
 

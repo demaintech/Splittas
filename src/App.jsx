@@ -1,5 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '/src/index.css';
 import Navbar from './components/Navbar';
 import Sections from './components/Sections';

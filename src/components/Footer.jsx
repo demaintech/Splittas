@@ -7,7 +7,7 @@ const Footer = () => {
     // [#0A3161]
   return (
     <div className='w-full h-auto bg-[#0A3161] flex flex-col justify-between'>
-        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 lg:pl-0'>
+        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0'>
             <div className='pt-8 pr-12'>
                 <div className='w-[110px] h-[100px] flex items-center -ml-8'>
                     <img src="/Splittas/assets/footer.png" alt="" />

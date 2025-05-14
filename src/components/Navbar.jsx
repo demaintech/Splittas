@@ -1,6 +1,5 @@
 import React from 'react'
-git
-
+import { faArrowRightLong, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
@@ -33,4 +32,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;
