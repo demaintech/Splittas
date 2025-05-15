@@ -4,7 +4,7 @@ import React from 'react'
 
 const Request = () => {
   return (
-    <div className='w-full h-[100px] bg-[#0A3161] mb-8 flex justify-between mt-8'>
+    <div className='w-full h-[100px] bg-[#0A3161] mb-8 flex justify-between mt-24'>
       <div className='flex flex-col text-white my-auto pl-[6px] lg:pl-24'>
         <h1 className='text-[14px] lg:text-[25px] font-bold'>Request a call back right now?</h1>
         <h5 className='text-[12px] lg:text-[16px]'>We'll be glad to hear from you.</h5>
