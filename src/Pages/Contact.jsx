@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -22,6 +23,7 @@ const Contact = () => {
         </nav> */}
 
         <h2 className='text-center text-[25px] lg:text-[55px] font-bold text-[#5c07B7]'>We'll love to hear from you.</h2>
+    
         <div className='flex flex-col lg:flex-row justify-between items-center'>
             <div className='w-[100%] lg:w-[50%] h-[460px]  flex justify-center scale-75'>
                 <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>

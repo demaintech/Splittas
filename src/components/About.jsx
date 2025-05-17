@@ -1,12 +1,18 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className='w-full flex-col lg:flex-row flex justify-center mt-20 gap-4'>
         <div className='w-[100%] flex justify-center items-center lg:w-[45%] h-[400px]'>
-            <img src={'/Splittas/assets/about.png'} alt="" className='w-auto h-auto '/>
+            <motion.img src={'/Splittas/assets/about.png'} alt="" className='w-auto h-auto '
+            initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
+            whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+            viewport={{ once: false }}
+            transition={{ duration: 1 }}
+            />
         </div>
         <div className='w-[100%] lg:w-[45%] pl-4 my-auto'>
             <h5 className='text-gray-600 text-[20px] font-semibold'>Who we are</h5>
