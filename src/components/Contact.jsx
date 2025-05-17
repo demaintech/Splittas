@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faArrowRightLong, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -15,6 +15,7 @@ const Contact = () => {
                     <li><FontAwesomeIcon icon={faFacebook} /></li>
                     <li><FontAwesomeIcon icon={faLinkedin} /></li>
                     <li><FontAwesomeIcon icon={faInstagram} /></li>
+                    <li><FontAwesomeIcon icon={faDiscord} /></li>
                 </ul>
                 <div className="mt-4 flex gap-4">
                     <span className="text-[25px] font-bold text-[#5c07B7]"><FontAwesomeIcon icon={faEnvelope} /></span>

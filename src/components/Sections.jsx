@@ -9,7 +9,6 @@ import Waitlist from './Waitlist';
 import GetStarted from './GetStarted';
 import Contact from './Contact';
 import Subscribe from './Subscribe';
-import Footer from './Footer';
 
 const Sections = () => {
   return (
@@ -24,7 +23,7 @@ const Sections = () => {
         <GetStarted />
         <Contact />
         <Subscribe />
-        <Footer /> 
+      
     </div>
   )
 }

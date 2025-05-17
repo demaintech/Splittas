@@ -4,13 +4,13 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const HowItWorks = () => {
   return (
-    <div className='w-full mt-20 -z-20000000'>
+    <div className='w-full mt-20 pt-[100px]' id="how-it-works">
         <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>How it works</h1>
 
         <div className='flex flex-col '>
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto -z-20000000'/>
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
                 </div>
                 <div className='w-[100%] lg:w-[50%] my-auto pl-4'>
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>01</h4>

@@ -8,7 +8,7 @@ const Home = () => {
   return (
 
     // purple = #5c07B7 Blue = #0A3161 Blue = #27AAE1
-    <div className='w-full h-[100%]'>
+    <div className='w-full h-[100%] z-0'>
     {/* Hero */}
 
         <section className='w-full flex flex-col lg:flex-row justify-between mt-24'>

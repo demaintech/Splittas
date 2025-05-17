@@ -8,18 +8,23 @@ import About from './Pages/About';
 import Campaign from './Pages/Campaign';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 import Sections from './components/Sections';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const App = () => {
   return (
     <div className=''>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/waitlist' element={<Campaign />} />
+        <Route path='*' element={<Sections />} />
         <Route path='/' element={<Sections />} />
       </Routes>
+      <Footer />
 
     {/* Customer Support Container */}
       {/* <div className='w-full h-[100vh] z-500000 fixed  top-0 flex items-end'  >
