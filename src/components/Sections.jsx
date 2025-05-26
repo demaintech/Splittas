@@ -12,7 +12,7 @@ import Subscribe from './Subscribe';
 
 const Sections = () => {
   return (
-    <div className='w-[100%] overflow-auto'>
+    <div className='w-[100%] overflow-hidden'>
         <Home />
         <Request />
         <About />

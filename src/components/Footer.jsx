@@ -7,7 +7,7 @@ const Footer = () => {
     // [#0A3161]
   return (
     <div className='w-full h-auto bg-[#0A3161] flex flex-col justify-between'>
-        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0'>
+        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0 text-[16px]'>
             <div className='pt-8 pr-12'>
                 <div className='w-[110px] h-[100px] flex items-center -ml-8'>
                     <img src="/Splittas/assets/footer.png" alt="" />
@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='pt-8'>
-                <ul className='flex flex-col gap-2 text-white text-[19px]'>
+                <ul className='flex flex-col gap-2 text-white '>
                     <li className='font-bold'>Company</li>
                     <li className='mt-4'>About <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
                     <li>Contacts <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='pt-8'>
-                <ul className='flex flex-col gap-2 text-white text-[18px]'>
+                <ul className='flex flex-col gap-2 text-white '>
                     <li className='font-bold text-[19px] '>Services</li>
                     <li className='mt-4'>Financial Planning</li>
                     <li>Strategic Savings</li>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <ul className='flex flex-col gap-2 pt-8 text-white text-[19px]'>
+                <ul className='flex flex-col gap-2 pt-8 text-white '>
                     <li className='font-bold'>Contacts</li>
                     <li className='mt-4'>+1 (433) 7823 000</li>
                     <li>Ottawa, CA.</li>
@@ -53,10 +53,19 @@ const Footer = () => {
                     </ul>
                 </ul>
             </div>
+
+            <div className='pt-8'>
+                <ul className='flex flex-col gap-2 text-white '>
+                    <li className='font-bold'>Company</li>
+                    <li className='mt-4'>Privacy policy <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
+                    <li>Terms and conditions <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
+                    {/* <li>Demo</li> */}
+                </ul>
+            </div>
         </div>
 
-        <div className='w-[90%] border-t-[1px] flex justify-center items-center pt-4 mx-auto h-[10%]'>
-            <h2 className='text-center text-white font-normal text-[20px]  '>SPLITTAS TECHNOLOGY &copy; ALL RIGHTS RESERVED. </h2>
+        <div className='w-[98%] border-t-[1px] flex justify-center items-center pb-6 pt-4 mx-auto h-[10%]'>
+            <h2 className='text-center text-white font-semibold text-[13px] '>&copy;  SPLITTAS TECHNOLOGY ALL RIGHTS RESERVED. </h2>
         </div>
     </div>
   )

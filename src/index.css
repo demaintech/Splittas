@@ -10,3 +10,56 @@ h1, h2, h3, h4, h5, p, span, ul{
 a.active{
     color: #5c07B7;
 }
+
+
+
+
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  list-style: none;
+  /* padding: 10px; */
+  margin: 0;
+  border: 1px solid #ccc;
+  top: 30px;
+  width: 200px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.nav-item:hover .dropdown {
+  display: flex;
+}
+
+
+
+.dropdown li{
+   
+    padding: 2px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+
+.dropdown li:hover {
+    background-color: #f0f0f0;
+    padding: 2px;
+    width: 100%;
+    padding-left: 10px;
+}

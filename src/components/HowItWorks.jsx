@@ -7,22 +7,22 @@ const HowItWorks = () => {
   return (
     <div className='w-full mt-20 pt-[100px]' id="how-it-works">
         <motion.h1
-        initial={{ opacity: 0, y: 40 }}           // Start 40px lower and invisible
-        whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'
-    >
-      How it works
-    </motion.h1>
+            initial={{ opacity: 0, y: 40 }}           // Start 40px lower and invisible
+            whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'
+        >
+        How it works
+        </motion.h1>
         <div className='flex flex-col '>
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <motion.img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
-                    initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
-                    whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
-                    viewport={{ once: false }}
-                    transition={{ duration: 1 }}
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
+                    // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
+                    // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+                    // viewport={{ once: false }}
+                    // transition={{ duration: 1 }}
                     />
                 </div>
                 <motion.div className='w-[100%] lg:w-[50%] my-auto pl-4'
@@ -52,22 +52,22 @@ const HowItWorks = () => {
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <motion.img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
-                        initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
-                        whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
-                        viewport={{ once: false }}
-                        transition={{ duration: 1 }}
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto'
+                        // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
+                        // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+                        // viewport={{ once: false }}
+                        // transition={{ duration: 1 }}
                     />
                 </div>
             </div>
 
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <motion.img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
-                        initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
-                        whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
-                        viewport={{ once: false }}
-                        transition={{ duration: 1 }}
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
+                        // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
+                        // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+                        // viewport={{ once: false }}
+                        // transition={{ duration: 1 }}
                     />
                 </div>
                 <motion.div className='w-[100%] lg:w-[50%] my-auto pl-4'
@@ -97,11 +97,11 @@ const HowItWorks = () => {
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <motion.img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
-                    initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
-                    whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
-                    viewport={{ once: faBullseye }}
-                    transition={{ duration: 1 }}
+                    <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
+                    // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
+                    // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+                    // viewport={{ once: faBullseye }}
+                    // transition={{ duration: 1 }}
                     />
                 </div>
             </div>

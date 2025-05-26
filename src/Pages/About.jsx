@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -27,14 +28,20 @@ const About = () => {
                 <img src={'/Splittas/assets/about.png'} alt="" className='w-auto h-auto '/>
             </div>
             
-            <div className='w-[100%] flex flex-col pl-4 lg:pl-8'>
+            <motion.div 
+                className='w-[100%] flex flex-col pl-4 lg:pl-8'
+                initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
+                whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                >
                 <h2 className='text-[30px] font-bold'>Overview</h2>
                 <p className='text-[21px] text-gray-600 font-normal text-sm/7 w-[90%] lg:w-[65%] mt-4'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam deserunt id odio culpa ipsum mollitia aliquid beatae harum quod minus. Error voluptate deserunt dolore dolorum ipsam a nihil, distinctio velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni eos corporis, doloribus ut non sit deleniti placeat amet facilis iusto rerum recusandae. Illum iste saepe similique deleniti, vitae delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga deleniti libero fugiat architecto, laboriosam cumque, ex culpa repellendus inventore maxime rerum expedita commodi fugit! Atque tempore deleniti eveniet ipsum. Esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo repudiandae corrupti! Fugit iure vel aliquam, labore maiores id pariatur consequatur ducimus reiciendis libero sunt beatae. Officiis consequatur laboriosam totam?</p>
                 <h2 className='text-[30px] font-bold mt-8'>Our Mission</h2>
                 <p className='text-[21px] text-gray-600 font-normal text-sm/7 w-[90%] lg:w-[65%] mt-4'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam deserunt id odio culpa ipsum mollitia aliquid beatae harum quod minus. Error voluptate deserunt dolore dolorum ipsam a nihil, distinctio velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni eos corporis, doloribus ut non sit deleniti placeat amet facilis iusto rerum recusandae. Illum iste saepe similique deleniti, vitae delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga deleniti libero fugiat architecto, laboriosam cumque, ex culpa repellendus inventore maxime rerum expedita commodi fugit! Atque tempore deleniti eveniet ipsum. Esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo repudiandae corrupti! Fugit iure vel aliquam, labore maiores id pariatur consequatur ducimus reiciendis libero sunt beatae. Officiis consequatur laboriosam totam?</p>
                 <h2 className='text-[30px] font-bold mt-8'>Our Vision</h2>
                 <p className='text-[21px] text-gray-600 font-normal text-sm/7 w-[90%] lg:w-[65%] mt-4'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam deserunt id odio culpa ipsum mollitia aliquid beatae harum quod minus. Error voluptate deserunt dolore dolorum ipsam a nihil, distinctio velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni eos corporis, doloribus ut non sit deleniti placeat amet facilis iusto rerum recusandae. Illum iste saepe similique deleniti, vitae delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga deleniti libero fugiat architecto, laboriosam cumque, ex culpa repellendus inventore maxime rerum expedita commodi fugit! Atque tempore deleniti eveniet ipsum. Esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores explicabo repudiandae corrupti! Fugit iure vel aliquam, labore maiores id pariatur consequatur ducimus reiciendis libero sunt beatae. Officiis consequatur laboriosam totam?</p>
-            </div>
+            </motion.div>
         </div>
 
 

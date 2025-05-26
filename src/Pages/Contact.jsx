@@ -6,7 +6,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 
 const Contact = () => {
   return (
-    <div className='w-[100%] mt-[100px]'>
+    <div className='w-[100%] mt-[100px] '>
         {/* <nav className='w-[100%] flex flex-row justify-between '>
             <div className='w-[110px] h-[100px] my-auto flex'>
                 <img src={'/Splittas/assets/brand.jpg'} alt="" className='w-auto h-auto scale-75'/>
@@ -31,9 +31,24 @@ const Contact = () => {
             <div className='w-[100%] lg:w-[50%]  h-[550px] flex flex-col items-center'>
                 <h2 className='text-center text-[25px] font-bold text-[#5c07B7] mt-2'>Send us a message.</h2>
                 <form action="" className='w-[90%] mt-4 lg:w-[70%] h-[400px] border-2 flex flex-col items-center gap-4 pt-8 rounded-3xl'>
-                    <input type="text" placeholder='Enter your Full name' className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'/>
-                    <input type="email" placeholder='Enter your Email or phone'  className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'/>
-                    <textarea type="text" placeholder='Enter your message...'  className='w-[90%] h-[150px] border-2 rounded-3xl pl-4 pt-4 pr-4'/>
+                    <input 
+                        type="text"  
+                        placeholder='Enter your Full name' 
+                        className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'
+                        required
+                        />
+                    <input 
+                        type="email" 
+                        placeholder='Enter your Email or phone'  
+                        className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'
+                        required
+                        />
+                    <textarea 
+                        type="text" 
+                        placeholder='Enter your message...'  
+                        className='w-[90%] h-[150px] border-2 rounded-3xl pl-4 pt-4 pr-4'
+                        required
+                        />
                     <button className='w-[90%] h-[50px] border-2 rounded-3xl bg-[#5c07B7] outline-none border-none text-white text-[19px] font-bold'>Send message</button>
                 </form>
                 <ul className='flex gap-4 text-[25px] font-bold text-[#5c07B7] mt-4'>

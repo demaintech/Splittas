@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faBullseye, faChartArea, faGlobe, faHeadset, faMoneyBillTransfer, faMoneyCheckDollar, faSeedling, faWallet, faWifi } from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
 
 const service = [
     {
@@ -67,7 +68,13 @@ const service = [
 
 
 const servicesection = service.map(services =>
-    <div className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'>
+    <motion.div 
+        className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'
+            initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
+            whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
+            viewport={{ once: false }}
+            transition={{ duration: 1 }}
+        >
         <div className='text-center flex flex-col items-center text-white pt-6'>
             <span className='text-[20px]'>
                 {services.serviceicon}
@@ -76,7 +83,7 @@ const servicesection = service.map(services =>
             <p className='text-[15px] w-[90%]'>{services.description}</p>
         </div>
         <div className='w-[80px] h-[2px] bg-white mb-2'></div>
-    </div>
+    </motion.div>
 )
 
 
