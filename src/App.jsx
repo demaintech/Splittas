@@ -1,30 +1,16 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '/src/index.css';
-import Navbar from './components/Navbar';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Campaign from './Pages/Campaign';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
-import Sections from './components/Sections';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import LandingPage from './Pages/LandingPage';
+import Campaign from './Pages/Campaign';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const App = () => {
   return (
     <div className=''>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/waitlist' element={<Campaign />} />
-        <Route path='*' element={<Sections />} />
-        <Route path='/' element={<Sections />} />
-      </Routes>
-      <Footer />
+      <LandingPage />
+      <Campaign />
 
     {/* Customer Support Container */}
       {/* <div className='w-full h-[100vh] z-500000 fixed  top-0 flex items-end'  >

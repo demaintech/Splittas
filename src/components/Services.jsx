@@ -76,7 +76,7 @@ const servicesection = service.map(services =>
             transition={{ duration: 1 }}
         >
         <div className='text-center flex flex-col items-center text-white pt-6'>
-            <span className='text-[20px]'>
+            <span className='text-[30px]'>
                 {services.serviceicon}
             </span>
             <h2 className='text-[17px] font-semibold'>{services.servicename}</h2>

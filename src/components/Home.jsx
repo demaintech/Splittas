@@ -23,8 +23,8 @@ const Home = () => {
                     > Bills. </span>
                 </motion.h1>
                 <p className='w-[90%] mx-auto md:mx-0 lg:w-[96%] mt-4 text-gray-600 font-semibold text-sm/6 text-center md:text-left'><span className='text-gray-500 font-extrabold'>Plan Smarter, Live Better.</span> <br /> Be the first 100 users to unlock full premium access access to our all-in-one Fintech app - absolutely free. No fees, no transfer charges, no limits. Get powerful tools for strategic savings, budgetind, multi-currency accounts and smart financial planning - all designed to help you take full control of your money. This limited-time campaign is simple: register and complete a one-time deposit to qualify. The first 100 users to complete this step will gain exclusive, early access to the full premium experience - no subscriptions, no hidden costs. Only 100 spots are available - and they're going fast. Join the waitlist now to secure your chance to participate and start your journey toward smarter money management.</p>
-                <div className='flex w-[80%] gap-4 mt-8 mx-auto md:mx-0'>
-                    <button className='w-[120px] lg:w-[150px] h-[40px] lg:h-[45px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[14px] lg:text-[17px]'>Join Waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                <div className='flex flex-col sm:flex-row w-[100%] items-center gap-4 mt-8 mx-auto md:mx-0'>
+                    <button className='w-[120px] lg:w-[150px] h-[40px] lg:h-[45px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[13px] lg:text-[17px]'>Join Waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     <div className='flex items-center gap-2 my-auto '>
                         <h2 className='text-[17px] lg:text-[20px] font-bold text-[#5c07B7]'>Contact us</h2>
                         <div className='w-[3px] bg-[#5c07B7] h-[25px]'></div>

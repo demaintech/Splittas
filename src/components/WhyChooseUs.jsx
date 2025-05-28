@@ -40,7 +40,7 @@ const WhyChooseus = () => {
                     </span>
                 </div>
                 <h2 className='text-center text-[26px] mt-4 font-bold'>24/7 Customer Support</h2>
-                <p className='text-center text-[16px] w-[90%] mt-2 text-gray-700 font-semibold mx-auto'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi libero quis, corrupti officiis possimus maiores
+                <p className='text-center text-[16px] w-[90%] mt-2 text-gray-700 font-semibold mx-auto'>We're here for you around the clock. Our dedicated support team is available anytime
                 </p>
             </div>
         </div>

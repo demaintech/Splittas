@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.div 
-        className='w-[90%] mx-auto rounded-3xl  mt-12 bg-[#5c07B7] text-white py-8 h-[820px] lg:h-[620px]'
+        className='w-[95%] mx-auto rounded-3xl  mt-12 bg-[#5c07B7] text-white py-8 h-[820px] lg:h-[620px]'
         initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
         whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
         viewport={{ once: false }}

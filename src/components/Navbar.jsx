@@ -1,5 +1,5 @@
 // import {useState} from 'react';
-import { faArrowRightLong, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faArrowRightLong, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -23,9 +23,9 @@ const Navbar = () => {
       className="w-full fixed h-[100px] bg-white top-0 shadow-lg z-10"
     >
       <nav className="w-[100%] flex flex-row justify-between">
-        <div className="w-[110px] h-[100px] my-auto flex">
-          <img src={'/Splittas/assets/brand.jpg'} alt="" className="w-auto h-auto scale-75" />
-          <h1 className="my-auto text-[26px] font-bold ml-[-25px] z-50 text-[#5c07B7]">Splittas</h1>
+        <div className="w-[220px] h-[100px] my-auto flex">
+          <img src={'/Splittas/assets/ICONS-30.png'} alt="" className="w-auto h-auto scale-75" />
+          {/* <h1 className="my-auto text-[26px] font-bold ml-[-25px] z-50 text-[#5c07B7]">Splittas</h1> */}
         </div>
 
         <ul className="hidden lg:flex font-bold gap-4 my-auto">
@@ -34,7 +34,7 @@ const Navbar = () => {
           </NavLink>
 
           <li className="nav-item dropdown-parent">
-          Pages ▾
+          Pages < FontAwesomeIcon  icon={faAngleDown}/>
           <ul className="dropdown ">
             <NavLink to="/about">
             <li>About <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
@@ -46,7 +46,7 @@ const Navbar = () => {
             
 
             <NavLink to="/waitlist">
-            <li>Contact <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
+            <li>Waitlist <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
           </NavLink>
             
           </ul>
