@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className=''>
       <LandingPage />
-      <Campaign />
+      {/* <Campaign /> */}
 
     {/* Customer Support Container */}
       {/* <div className='w-full h-[100vh] z-500000 fixed  top-0 flex items-end'  >

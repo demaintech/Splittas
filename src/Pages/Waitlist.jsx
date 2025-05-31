@@ -3,9 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faAngleUp, faArrowRightLong, faCaretRight, faMarker } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCopy } from '@fortawesome/free-regular-svg-icons';
-import { div } from 'framer-motion/client';
+import { div, h2 } from 'framer-motion/client';
+import WaitlistHowItWorks from './WaitlistHowItWorks';
 
 const refcode = "sp00721x";
+
+
 
 const faqs = [
     {
@@ -115,13 +118,11 @@ const Waitlist = () => {
             <h1 className='text-[#5c07B7] text-[45px] font-bold text-center'>How it works.</h1>
 
         {/* How it works */}
-            <div className=''>
-           
-            </div>
+            <WaitlistHowItWorks />
 
-            <h1 className='text-[#5c07B7] text-[45px] font-bold text-center'>FAQs.</h1>  
         {/* Faq Section */}
-            <div className=''>
+            <div className='mt-24'>
+                <h1 className='text-[#5c07B7] text-[45px] font-bold text-center'>FAQs.</h1> 
                 {faqsection}
             </div>          
         </div>
@@ -131,4 +132,4 @@ const Waitlist = () => {
   )
 }
 
-export default Waitlist
+export default Waitlist;

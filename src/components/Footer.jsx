@@ -20,10 +20,10 @@ const Footer = () => {
                         <li className='font-bold'>Company</li>
                    
                     <Link to="/about">
-                        <li className='mt-4'>About <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
+                        <li className='mt-4'>About </li>
                      </Link>
                      <Link to="/contact">
-                        <li>Contacts <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></li>
+                        <li>Contacts </li>
                     </Link>
                     {/* <li>Demo</li> */}
                 </ul>
@@ -69,8 +69,13 @@ const Footer = () => {
             <div className='pt-8'>
                 <ul className='flex flex-col gap-2 text-white '>
                     <li className='font-bold'>Legal</li>
-                    <li className='mt-4'>Privacy policy </li>
-                    <li>Terms of service </li>
+                    <Link to="/privacypolicy">
+                        <li className='mt-4'>Privacy policy </li>
+                    </Link>
+                    <Link to="/termsofservice">
+                        <li>Terms of service </li>
+                    </Link>
+                    
                     {/* <li>Demo</li> */}
                 </ul>
             </div>
