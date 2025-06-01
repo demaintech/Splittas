@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 const howitworkssection = [
     {
-        title: "Step 1",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at blanditiis facilis necessitatibus delectus tempora, consequuntur vel. Aliquid distinctio incidunt magni voluptates aliquam corrupti nihil, molestias, dolor provident, natus blanditiis."
+        title: "Join the Waitlist",
+        description: "Enter your email address to secure early access to our upcoming app. By signing up, you’ll be part of an exclusive group that gets updates before anyone else. Stay tuned for the launch and be among the first to experience our innovative features.",
     },
 
     {
-        title: "Step 2",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at blanditiis facilis necessitatibus delectus tempora, consequuntur vel. Aliquid distinctio incidunt magni voluptates aliquam corrupti nihil, molestias, dolor provident, natus blanditiis."
+        title: " Stay Connected",
+        description: "Follow our official social media pages to receive important announcements. Join our active Discord community where you can share your thoughts, engage with the team, ask questions, and get firsthand insights about the project’s progress."
     },
 
     {
-        title: "Step 3",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at blanditiis facilis necessitatibus delectus tempora, consequuntur vel. Aliquid distinctio incidunt magni voluptates aliquam corrupti nihil, molestias, dolor provident, natus blanditiis."
+        title: "Get Notified First",
+        description: "When our app goes live, you'll receive a direct email notification with access details. Being on the waitlist means you're first in line for early features, exclusive content, and special community perks."
     },
 ];
 
@@ -60,4 +60,4 @@ const WaitlistHowItWorks = () => {
   )
 }
 
-export default WaitlistHowItWorks
+export default WaitlistHowItWorks;

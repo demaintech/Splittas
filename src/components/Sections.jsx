@@ -4,7 +4,7 @@ import Request from './Request';
 import About from './About';
 import Services from './Services';
 import HowItWorks from './HowItWorks';
-import WhyChooseus from './Whychooseus';
+import WhyChooseus from './WhyChooseUs';
 import Waitlist from './Waitlist';
 import GetStarted from './GetStarted';
 import Contact from './Contact';

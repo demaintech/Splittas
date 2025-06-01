@@ -12,13 +12,38 @@ const refcode = "sp00721x";
 
 const faqs = [
     {
-        name: "What is waitlist?",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error recusandae fugit enim vitae? Doloremque eos dolore, enim incidunt distinctio error nihil dolor dolorum quasi dolores quod inventore qui officiis?"
+        name: "What is the waitlist for? ",
+        content: "The waitlist grants early access to our upcoming fintech app and keeps you updated with exclusive announcements."
     },
 
     {
-        name: "What is waitlist?",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error recusandae fugit enim vitae? Doloremque eos dolore, enim incidunt distinctio error nihil dolor dolorum quasi dolores quod inventore qui officiis?"
+        name: "How do I join the waitlist?",
+        content: "Simply enter your email address on our website and follow the steps provided to complete your registration."
+    },
+
+    {
+        name: " Will I receive updates after joining? ",
+        content: "Yes! You’ll get important updates through email and can also follow us on social media or join our Discord community for more insights."
+    },
+
+    {
+        name: "Is it free to join the waitlist?",
+        content: "Absolutely. Joining the waitlist is completely free and open to everyone interested."
+    },
+
+    {
+        name: "What happens after I join the waitlist?  ",
+        content: "You'll be among the first to know when we launch, receive early access benefits, and be part of our growing community"
+    },
+
+    {
+        name: "Can I invite others to join?",
+        content: "Yes! Feel free to share the waitlist link with friends who might be interested."
+    },
+
+    {
+        name: " How will I know when the app is live? ",
+        content: "We’ll send you an email notification with all the details once the app is officially launched"
     },
 ];
 
