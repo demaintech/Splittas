@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='w-full h-auto bg-gray-900 flex flex-col justify-between'>
         <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0 text-[16px]'>
-            <div className='pt-8 pr-12'>
+            <div className='pt-8 pr-12 pl-6'>
                 <div className='w-[70px] h-[70px] flex items-center -ml-8'>
                     <img src="/Splittas/assets/footer.png" alt="" />
                     <h2 className='text-[26px] text-white font-bold ml-2'>Splittas</h2>
@@ -46,11 +46,11 @@ const Footer = () => {
             <div>
                 <ul className='flex flex-col gap-2 pt-8 text-white '>
                     <li className='font-bold'>Contacts</li>
-                    <li className='mt-4'>+2349133636596</li>
-                    <li className='mt-2'>+2348141500971</li>
-                    <li>Ottawa, CA.</li>
+                    <li className='mt-4'>(+234) 913 363 6596</li>
+                    <li className='mt-2'>(+234) 814 150 0971</li>
+                    <li>Abia State, Nigeria.</li>
                     <li className='mt-4'>Inquires</li>
-                    <li>splittas@gmail.com.</li>
+                    <li>splittastechnology@gmail.com</li>
                     <ul className='flex gap-4 text-[20px] font-bold text-white mt-4'>
                         <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
                             <li><FontAwesomeIcon icon={faXTwitter} /></li>

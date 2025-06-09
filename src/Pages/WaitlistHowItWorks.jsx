@@ -41,7 +41,7 @@ const WaitlistHowItWorks = () => {
                             className='flex flex-col md:w-[45%]'
                         >
                             <h2 className='text-[20px] md:text-[45px] font-bold text-center lg:text-left '>{howitworks.title}</h2>
-                            <p className='text-[18px] text-gray-500 text-sm/6 mt-4 text-center lg:text-left'>{howitworks.description}</p>
+                            <p className='text-[18px] text-gray-700 text-sm/6 mt-4 font-semibold text-center lg:text-left'>{howitworks.description}</p>
                         </motion.div>
                         <motion.div 
                             initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible

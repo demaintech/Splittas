@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong, faBullseye } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
@@ -34,7 +34,9 @@ const HowItWorks = () => {
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>01</h4>
                     <h1 className='text-[29px] font-bold'>Create your account</h1>
                     <p className='w-[95%] lg:w-[60%] text-[18px]/7 font-semibold text-gray-600'>Getting started is quick and easy. Simply signup using your email or phone number, and set a secure password. Once you're in, you'll be welcomed with a smooth onboarding experience that guides you step by step.</p>
-                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <Link to="/waitlist">
+                        <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    </Link>
                 </motion.div>
             </div>
 
@@ -48,7 +50,9 @@ const HowItWorks = () => {
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>02</h4>
                     <h1 className='text-[29px] font-bold'>Open an account in any currency</h1>
                     <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Our app gives you the flexibility to open a financial account in your preferred currency - whether it's USD, EUR, GBP, NGN, or others. This  feature makes it easier to manage your finances locally or internaionally all from one place.</p>
-                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <Link to="/waitlist">
+                        <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    </Link>
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
@@ -63,6 +67,7 @@ const HowItWorks = () => {
 
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
+                 
                     <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '
                         // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
                         // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
@@ -79,7 +84,9 @@ const HowItWorks = () => {
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>03</h4>
                     <h1 className='text-[29px] font-bold'>Set and Manage Savings Plan</h1>
                     <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Define your financial goals- whether it's savings for a trip, emergency funds, or big purchase. You can create multiple savings plans, set targets amounts, deadline, and track your progress overtime. We also send friendly reminders and insights to keep you motivated and consistend.</p>
-                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <Link to="/waitlist">
+                        <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    </Link>
                 </motion.div>
             </div>
 
@@ -93,7 +100,9 @@ const HowItWorks = () => {
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>04</h4>
                     <h1 className='text-[29px] font-bold'>Access Powerful Financial Tools</h1>
                     <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Once your account is set up, you'll unlock all app features. Access personalized financial tips, budgets planning tools, spending analysis, and smart suggestions tailored to your habits - everything you need to make better money decisions and build stronger financial future.</p>
-                    <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    <Link to="/waitlist">
+                        <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
+                    </Link>
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>

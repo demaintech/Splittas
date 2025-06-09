@@ -26,11 +26,11 @@ const Contact = () => {
                 </ul>
                 <div className="mt-4 flex gap-4 mx-auto items-center lg:mx-0">
                     <span className="text-[20px] font-bold "><FontAwesomeIcon icon={faEnvelope} /></span>
-                    <h2 className="text-[26px] font-bold">splittas@gmail.com <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></h2>
+                    <h2 className="text-[17px] lg:text-[20px] font-bold">splittastechnology@gmail.com<FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></h2>
                 </div>
                 <div className="mt-4 flex gap-4 items-center  mx-auto lg:mx-0">
                     <span className="text-[20px] font-bold "><FontAwesomeIcon icon={faPhone} /></span>
-                    <h2 className="text-[26px] font-bold">+1 (433) 7823 000 <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></h2>
+                    <h2 className="text-[17px] lg:text-[20px] font-bold">(+234) 913 363 6596 <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></h2>
                 </div>
             </div>
             <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>

@@ -1,6 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
-import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 const GetStarted = () => {
   return (
@@ -9,8 +11,12 @@ const GetStarted = () => {
             <h2 className='text-[35px] lg:text-[55px] font-bold mx-auto lg:mx-0'><span className='text-[#5c07B7]'>Plan</span> and Manage your <span className='text-[#5c07B7]'>Finances</span> with us.</h2>
             <p className='text-[20px] lg:text-[28px] font-bold mx-auto lg:mx-0'>Download our app and get started <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></p>
             <div className='flex text-white gap-4 mt-8 mx-auto lg:mx-0'>
-                <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faAndroid} /> Android</button>
-                <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faApple} /> IOS</button>
+                <Link to="/waitlist">
+                  <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faAndroid} /> Android</button>
+                </Link>
+                <Link to="/waitlist">
+                  <button className='w-[150px] h-[50px] text-[18px] font-semibold bg-[#0A3161] rounded-3xl'><FontAwesomeIcon icon={faApple} /> IOS</button>
+                </Link>
             </div>
         </div>
         <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>

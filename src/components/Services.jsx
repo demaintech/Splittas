@@ -89,7 +89,7 @@ const servicesection = service.map(services =>
 
 const Test = () => {
   return (
-    <div className='w-full mt-[100px]' id="service">
+    <div className='w-full mt-20 pt-[100px]' id="service">
         <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>Our Services</h1>
         <div className='w-[100%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
           {servicesection}
