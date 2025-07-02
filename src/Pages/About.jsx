@@ -31,49 +31,49 @@ const About = () => {
             <div>
 
                 <motion.div 
-                    className='w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex justify-between items-center mt-9'
+                    className='w-[95%] md:w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex flex-col-reverse lg:flex-row justify-between lg:items-center p-4 lg:p-0 mt-9'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
                     transition={{ duration: 1 }}
                 >
-                    <div className='w-[50%] flex flex-col text-white font-semibold pl-8'>
+                    <div className='lg:w-[50%] flex flex-col text-white font-semibold pl-2 lg:pl-8'>
                         <h2 className='text-[55px] font-bold'>Overview</h2>
                         <div className='w-[100px] h-[4px] bg-white rounded-3xl'></div>
-                        <p className='w-[85%] mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
+                        <p className='w-[95%] lg:w-[85%] mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
                     </div>
                     <div></div>
                 </motion.div>
 
 
                  <motion.div 
-                    className='w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex justify-between items-center mt-9 '
+                    className='w-[95%] md:w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex flex-col lg:flex-row justify-between lg:items-center p-4 lg:p-0 mt-9 '
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
                     transition={{ duration: 1 }}
                     >
                     <div></div>
-                    <div className='w-[50%] flex flex-col text-white font-semibold'>
+                    <div className='lg:w-[50%] flex flex-col text-white font-semibold pl-2'>
                         <h2 className='text-[55px] font-bold'>Our mission</h2>
                         <div className='w-[100px] h-[4px] bg-white rounded-3xl'></div>
-                        <p className='w-[85%] mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
+                        <p className='w-[95%] lg:w-[85%] mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
                     </div>
                 </motion.div>
 
 
 
                 <motion.div 
-                    className='w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex justify-between items-center mt-9'
+                    className='w-[95%] md:w-[90%] h-[500px] bg-[#5c07B7] rounded-3xl mx-auto flex flex-col-reverse lg:flex-row justify-between lg:items-center p-4 lg:p-0 mt-9'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
                     transition={{ duration: 1 }}
                     >
-                    <div className='w-[50%] flex flex-col text-white font-semibold pl-8'>
+                    <div className='lg:w-[50%] flex flex-col text-white font-semibold pl-2 lg:pl-8'>
                         <h2 className='text-[55px] font-bold'>Our Vision</h2>
                         <div className='w-[100px] h-[4px] bg-white rounded-3xl'></div>
-                        <p className='w-[85%] mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
+                        <p className='w-[95%] lg:w-[85%]  mt-8 text-sm/7'> At SPLITTAS TECHNOLOGY, we believe that financial stability is the key to unlocking a brighter future. However, we also recognize that many people struggle with financial instability due to a lack of knowledge on how to properly manage their finances. This is why we are committed to providing platforms that not only offers a wide range of financial services but also educates and guides users on effective financial planning and management.</p>
                     </div>
                     <div></div>
                 </motion.div>

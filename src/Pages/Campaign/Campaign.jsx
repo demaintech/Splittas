@@ -1,11 +1,15 @@
 // import { main } from 'framer-motion/client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faAngleRight, faMoon } from '@fortawesome/free-solid-svg-icons';
+import {  faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import Hero from './Hero';
+import Faq from './Faq';
+import UserProfile from './UserProfile';
+
 
 const Campaign = () => {
   return (
-    <main className='w-screen h-screen bg-[#5c07B7]'>
+    <main className='w-screen h-screen overflow-auto bg-[#5c07B7] bg-gray-900'>
       <div>
         <nav className='flex justify-evenly items-center'>
           <div>
@@ -27,30 +31,23 @@ const Campaign = () => {
           </div>
           <div>
             <span className='text-white text-xl'>
-              <FontAwesomeIcon icon={faMoon} />
+              {/* <FontAwesomeIcon icon={faMoon} /> */}
+              <FontAwesomeIcon icon={faSun} />
             </span>
           </div>
         </nav>
 
 
-        {/* Hero */}
+      {/* Hero */}
+        <UserProfile />
+      </div>
 
-        <div className='flex w-full justify-center gap-16 items-center'>
-          <div className='flex flex-col w-[50%]'>
-            <h2 className='text-white font-bold text-[56px]'>Splittas Premium <br /> Account</h2>
-            <p className='text-gray-300 text-[17px] font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus reprehenderit beatae voluptatum voluptas in eius quia, repudiandae unde, doloremque ex nobis voluptates. Eius facere distinctio rerum velit quia ipsum doloribus.</p>
-            <button className='flex justify-between rounded-sm mt-8 items-center w-[350px] p-4 font-bold h-[50px] bg-white'>
-              <div className='flex items-center gap-6'>
-                <FontAwesomeIcon icon={faXTwitter} />
-                <h2 className='text-[17px]'>Connect Twitter</h2>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faAngleRight} />
-              </div>
-            </button>
-          </div>
-          <div></div>
-        </div>
+      {/* Questions and answers */}
+        <Faq /> 
+
+      {/* Footer */}
+      <div className='w-full flex justify-center items-center py-8'>
+        <h2 className='text-[19px] text-gray-400'>&copy; Splittas Technology, 2025.</h2>
       </div>
     </main>  
   )

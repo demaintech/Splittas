@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faAngleUp, faArrowRightLong, faCaretRight, faMarker } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -48,31 +48,58 @@ const faqs = [
 ];
 
 
-const faqsection = faqs.map(faq => 
-    <>
-        <div className='w-[80%] p-4 bg-[#5c07B7] mx-auto rounded-lg text-white font-semibold flex justify-between items-center mt-6'>
-            <h2>{faq.name}</h2>
-            <span className='hidden'>
-                <FontAwesomeIcon icon={faAngleDown} />
-            </span>
 
-            <span>
-                <FontAwesomeIcon icon={faAngleUp} />
-            </span>
-        </div>
 
-        <div className='w-[80%] h-[150px] -mt-4 p-4 bg-[#5c07B7] mx-auto rounded-lg text-white hidden'>
-            <p>{faq.content}</p>
-        </div>
-    </>
-)
+// const faqsection = faqs.map(faq => 
+    
+//     <>
+    
+//         <div className='w-[95%]  md:w-[80%] p-4 bg-[#5c07B7] mx-auto rounded-[70px] text-white font-semibold flex justify-between items-center mt-6'>
+//             <h2>{faq.name}</h2>
+//             <button  className='hidden outline-none border-none bg-transparent'>
+//                 <FontAwesomeIcon icon={faAngleDown} />
+//             </button>
+
+//             <button
+//                 onClick={() => setShowFaq(true)}
+//             >
+//                 <FontAwesomeIcon icon={faAngleUp} />
+//             </button>
+//         </div>
+
+//         <div className={`${showFaq ? "" : "hidden"} w-[95%]  md:w-[80%] h-[150px] -mt-6 p-4 bg-[#5c07B7] mx-auto  text-white `}>
+//             <p>{faq.content}</p>
+//         </div>
+//     </>
+
+
+// )
 
 const Waitlist = () => {
+    const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+    const faqsection = faqs.map((faq, idx) => (
+    <div key={idx}>
+      <div className='w-[95%]  md:w-[80%] p-4 bg-[#5c07B7] mx-auto rounded-[70px] text-white font-semibold flex justify-between items-center mt-6'>
+        <h2>{faq.name}</h2>
+        <button
+          onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
+          className='outline-none border-none bg-transparent'
+        >
+          <FontAwesomeIcon icon={openFaqIndex === idx ? faAngleUp : faAngleDown} />
+        </button>
+      </div>
+      <div className={`${openFaqIndex === idx ? "" : "hidden"} w-[95%]  md:w-[80%] h-[150px] -mt-6 p-4 bg-[#5c07B7] mx-auto  text-white`}>
+        <p>{faq.content}</p>
+      </div>
+    </div>
+  ));
+
   return (
     <div className='mt-[100px]'>
         
         <div className='w-[100%] h-auto py-16 bg-[#5c07B7]'>
-            <div className=''>
+            <div className='hidden'>
                 <h2 className='text-center text-[25px] lg:text-[55px] font-bold text-white'>Join the wailist.</h2>
                 <form action="" className='flex flex-col justify-center gap-6 w-[100%] items-center mt-8'>
                     <input type="email" name="" id="" placeholder='Enter your email address' className='w-[70%] lg:w-[47%] h-[50px] bg-transparent border-2 border-white text-white rounded-3xl pl-4 text-[17px] lg:text-[20px] outline-none font-semibold'/>
@@ -84,7 +111,7 @@ const Waitlist = () => {
             </div>
 
         {/* This Section will be displayed after successful registration*/}
-            <div className='hidden'>
+            <div className=''>
                 <div className='flex  justify-center items-center gap-2'>
                     <h2 className='text-center text-[25px] lg:text-[30px] font-bold text-white'>Your ref code:</h2>
                     <span className='text-center text-[25px] lg:text-[30px] font-bold text-white'>{refcode}

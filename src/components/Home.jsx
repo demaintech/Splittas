@@ -39,7 +39,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='w-[100%] lg:w-[50%] h-[460px]  flex justify-center scale-75'>
-                <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto ' />
+                <img src={'/assets/fin.png'} alt="" className='w-auto h-auto ' />
             </div>
         </section>
     </div>

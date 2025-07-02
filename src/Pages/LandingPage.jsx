@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import About from './About'
@@ -17,12 +16,13 @@ const LandingPage = () => {
       <ScrollToTop />
       <Navbar />
       <Routes>
+        {/* <Route path='/landing' element={<LandingPage />} /> */}
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/waitlist' element={<Waitlist />} />        
         <Route path='/termsofservice' element={<TermsOfService />} />
         <Route path='/privacypolicy' element={<PrivacyPolicy />} />
-        <Route path='*' element={<Sections />} />
+        {/* <Route path='*' element={<Sections />} /> */}
         <Route path='/' element={<Sections />} />
       </Routes>
       <Footer />

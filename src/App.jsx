@@ -2,7 +2,8 @@ import React from 'react'
 import '/src/index.css';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 import LandingPage from './Pages/LandingPage';
-import Campaign from './Pages/Campaign';
+import Campaign from './Pages/Campaign/Campaign';
+import { Route, Routes } from 'react-router-dom';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -11,6 +12,10 @@ const App = () => {
     <div className=''>
       <LandingPage />
       {/* <Campaign /> */}
+
+       <Routes>
+            <Route path='/landing' element={<LandingPage />} />
+        </Routes>
 
     {/* Customer Support Container */}
       {/* <div className='w-full h-[100vh] z-500000 fixed  top-0 flex items-end'  >

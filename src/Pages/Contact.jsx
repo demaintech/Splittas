@@ -26,7 +26,7 @@ const Contact = () => {
     
         <div className='flex flex-col lg:flex-row justify-between items-center'>
             <div className='w-[100%] lg:w-[50%] h-[460px]  flex justify-center scale-75'>
-                <img src={'/Splittas/assets/fin.png'} alt="" className='w-auto h-auto '/>
+                <img src={'/assets/waitlist1.jpeg'} alt="" className='w-auto h-auto rounded-3xl'/>
             </div>
             <div className='w-[100%] lg:w-[50%]  h-[550px] flex flex-col items-center'>
                 <h2 className='text-center text-[25px] font-bold text-[#5c07B7] mt-2'>Send us a message.</h2>

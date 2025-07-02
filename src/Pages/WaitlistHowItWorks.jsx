@@ -3,16 +3,19 @@ const howitworkssection = [
     {
         title: "Join the Waitlist",
         description: "Enter your email address to secure early access to our upcoming app. By signing up, you’ll be part of an exclusive group that gets updates before anyone else. Stay tuned for the launch and be among the first to experience our innovative features.",
+        img: "/assets/waitlist3.jpeg",
     },
 
     {
         title: " Stay Connected",
-        description: "Follow our official social media pages to receive important announcements. Join our active Discord community where you can share your thoughts, engage with the team, ask questions, and get firsthand insights about the project’s progress."
+        description: "Follow our official social media pages to receive important announcements. Join our active Discord community where you can share your thoughts, engage with the team, ask questions, and get firsthand insights about the project’s progress.",
+        img: "/assets/waitlist2.jpeg",
     },
 
     {
         title: "Get Notified First",
-        description: "When our app goes live, you'll receive a direct email notification with access details. Being on the waitlist means you're first in line for early features, exclusive content, and special community perks."
+        description: "When our app goes live, you'll receive a direct email notification with access details. Being on the waitlist means you're first in line for early features, exclusive content, and special community perks.",
+        img: "/assets/waitlist1.jpeg",
     },
 ];
 
@@ -48,8 +51,10 @@ const WaitlistHowItWorks = () => {
                             whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                             viewport={{ once: false }}
                             transition={{ duration: 1 }}
-                            className='w-[300px] md:w-[400px] h-[500px] bg-[#5c07B7] rounded-xl mx-auto lg:mx-0'
-                        ></motion.div>
+                            className='w-[300px] md:w-[400px] h-[500px]  rounded-xl mx-auto lg:mx-0'
+                        >
+                            <img src={howitworks.img} alt=""className="rounded-3xl" />
+                        </motion.div>
                     </div>
                             
             )})}
