@@ -2,7 +2,6 @@
   "name": "demain",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://demaintech.github.io/Splittas/",
   "type": "module",
   "scripts": {
     "dev": "vite",
