@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className="w-[100%] flex flex-row justify-between">
         <Link to="/">
           <div className="w-[220px] h-[100px] my-auto flex">
-            <img src={'/assets/ICONS-30.png'} alt="" className="w-auto h-auto scale-75" />
+            <img src="/assets/ICONS-30.png" alt="" className="w-auto h-auto scale-75" />
             {/* <h1 className="my-auto text-[26px] font-bold ml-[-25px] z-50 text-[#5c07B7]">Splittas</h1> */}
           </div>
         </Link>

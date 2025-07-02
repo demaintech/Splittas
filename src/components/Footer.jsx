@@ -11,7 +11,7 @@ const Footer = () => {
         <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0 text-[16px]'>
             <div className='pt-8 pr-12 pl-6'>
                 <div className='w-[70px] h-[70px] flex items-center -ml-8'>
-                    <img src="/Splittas/assets/footer.png" alt="" />
+                    <img src="/assets/footer.png" alt="" />
                     <h2 className='text-[26px] text-white font-bold ml-2'>Splittas</h2>
                 </div>
             </div>

@@ -20,7 +20,7 @@ const GetStarted = () => {
             </div>
         </div>
         <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-          <img src={'/assets/get2.jpeg'} alt="" className='w-[550px] h-[600px] rounded-3xl'/>
+          <img src="/assets/get2.jpeg" alt="" className='w-[550px] h-[600px] rounded-3xl'/>
         </div>
     </div>
   )

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className='w-full flex-col lg:flex-row flex justify-center mt-20 gap-4'>
         <div className='w-[100%] flex justify-center items-center lg:w-[45%] h-[400px]'>
-            <img src={'/assets/about.png'} alt="" className='w-auto h-auto '
+            <img src="/assets/about.png" alt="" className='w-auto h-auto '
             // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
             // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
             // viewport={{ once: false }}
