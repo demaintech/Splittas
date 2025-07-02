@@ -6,15 +6,16 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <motion.div 
-        className='w-[95%] mx-auto rounded-3xl  mt-12  contactImg text-white h-[820px] lg:h-[620px]'
+        className='w-[95%] mx-auto rounded-3xl  mt-12  contactImg text-white h-[700px] lg:h-[620px]'
         initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
         whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
         viewport={{ once: false }}
         transition={{ duration: 1 }}
         >
-        <div className="bg-black bg-opacity-60 w-[100%] h-[100%] py-8 rounded-3xl flex flex-row justify-between">
-        <div></div>
-        <div className="flex flex-col text-center w-[60%] justify-center items-center gap-8">
+        <div className="bg-black bg-opacity-60 w-[100%] h-[100%] py-8 rounded-3xl flex lg:flex-row justify-center items-center  lg:justify-between">
+        <div className=""></div>
+        
+        <div className="flex flex-col text-center lg:w-[60%] justify-center items-center gap-8">
         <h1 className='text-center text-[27px] lg:text-[55px] font-bold '>Get in touch with us.</h1>
         <p className='text-center mx-auto w-[80%] lg:w-[60%] text-[17px] font-semibold'>Got anything to tell us? We'll be glad to hear from you.</p>
         <div className='flex flex-col lg:flex-row text-center w-full justify-between items-center'>
