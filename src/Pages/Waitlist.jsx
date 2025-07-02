@@ -151,7 +151,7 @@ const Waitlist = () => {
 
 
         {/* This section will be displayed If email already exists. */}    
-            <div className='flex flex-col items-center hidden'>
+            <div className='flex-col items-center hidden'>
                 <h2 className='text-center text-[20px] lg:text-[55px] font-bold text-white'>This Email already joined the waitlist.</h2>
                 <div className='flex  justify-center items-center gap-2'>
                     <h2 className='text-center text-[20px] lg:text-[30px] font-bold text-white'>Your ref code:</h2>

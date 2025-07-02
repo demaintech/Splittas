@@ -82,7 +82,7 @@ const Navbar = () => {
       {/* Mobile NavBar */}
 
   {/* {isVisible ? ( */}
-     <div className='w-[80%] md:w-[60%]  h-[100vh] bg-white shadow-lg z-50 fixed flex flex-col justify-between hidden'>
+     <div className='w-[80%] md:w-[60%]  h-[100vh] bg-white shadow-lg z-50 fixed  flex-col justify-between hidden'>
           <div className='w-[100%] '>
             <div className='flex items-center w-[100%] justify-between pr-4  border-b-2'>
               <div>
