@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { faAngleDown, faArrowRightLong, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
@@ -13,13 +13,14 @@ import { motion } from "framer-motion";
   // };
 
 const Navbar = () => {
+  const [openNav, setOpenNav] = useState(false);
   return (
   
     <motion.div 
       initial={{ opacity: 0, y: -100 }}           // Start 40px lower and invisible
       whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.05 }}
       className="w-full fixed h-[100px] bg-white top-0 shadow-lg z-10"
     >
       <nav className="w-[100%] flex flex-row justify-between">
@@ -31,13 +32,13 @@ const Navbar = () => {
         </Link>
         
 
-        <ul className="hidden lg:flex font-bold gap-4 my-auto">
+        <ul className=" font-bold gap-4 my-auto lg:flex hidden">
           <NavLink to="/">
             <li>Home</li>
           </NavLink>
 
           <li className="nav-item dropdown-parent">
-          Pages < FontAwesomeIcon  icon={faAngleDown}/>
+          Our company < FontAwesomeIcon  icon={faAngleDown}/>
           <ul className="dropdown ">
             <NavLink to="/about">
             <li>About <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
@@ -73,7 +74,7 @@ const Navbar = () => {
           </Link>
           <button 
             className="text-[29px] pr-2 text-black lg:hidden" 
-            // onClick={setIsVisible(true)}
+            onClick={() => setOpenNav(true)}
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
@@ -82,23 +83,30 @@ const Navbar = () => {
       {/* Mobile NavBar */}
 
   {/* {isVisible ? ( */}
-     <div className='w-[80%] md:w-[60%]  h-[100vh] bg-white shadow-lg z-50 fixed  flex-col justify-between hidden'>
+     <motion.div 
+      initial={{ opacity: 0, x: -300 }}           // Start 40px lower and invisible
+      whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
+      viewport={{ once: false }}
+      transition={{ duration: 0.05 }}
+      className={`${openNav === true ? "flex" : "hidden"}  w-[70%] md:w-[60%] lg:hidden  h-[100vh] bg-white shadow-lg z-50 fixed  flex-col justify-between`}>
           <div className='w-[100%] '>
             <div className='flex items-center w-[100%] justify-between pr-4  border-b-2'>
               <div>
                 <div className="  h-[100px] my-auto flex">
-                  <img src={'/Splittas/assets/brand.jpg'} alt="" className="w-auto h-auto scale-75" />
-                  <h1 className="my-auto text-[26px] font-bold ml-[-25px] z-50 text-[#5c07B7]">Splittas</h1>
+                  <img src={'/assets/brand.jpg'} alt="" className="w-auto h-auto scale-75" />
+                  <h1 className="my-auto text-[26px] font-bold ml-[-25px]  z-50 text-[#5c07B7]">Splittas</h1>
                 </div>
               </div>
               <div>
+                <button onClick={() => setOpenNav(false)}>
                 <span className='text-[27px] text-black'>
                   <FontAwesomeIcon icon={faClose} />
                 </span>
+                </button>
               </div>
             </div> 
 
-            <ul className='font-bold gap-4 flex flex-col text-[25px] pl-6 pt-6'>
+            <ul className='font-bold gap-8 flex flex-col text-[25px] pl-6 pt-6'>
               <NavLink to="/">
                 <li>Home</li>
               </NavLink>
@@ -120,7 +128,9 @@ const Navbar = () => {
               </NavLink>
 
                <Link to="/waitlist">
-              <button className="w-[160px] h-[50px] mt-8 bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] ">
+              <button 
+                onClick={() => setOpenNav(false)}
+                className="w-[160px] h-[50px] mt-8 bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] ">
                 Join waitlist <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} />
               </button>
             </Link>
@@ -131,7 +141,7 @@ const Navbar = () => {
           <div className='flex justify-center items-center pb-4 text-[18px] font-semibold text-gray-500'>
             <h2>&copy; Splittas Technology, 2025</h2>
           </div>
-        </div> 
+        </motion.div> 
         {/* ) : null} */}
         
       </nav>

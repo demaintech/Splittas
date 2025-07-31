@@ -7,7 +7,7 @@ import React from 'react'
 const Footer = () => {
     // [#0A3161]
   return (
-    <div className='w-full h-auto bg-gray-900 flex flex-col justify-between'>
+    <div className='w-full h-auto bg-gray-900 flex flex-col justify-between py-16'>
         <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0 text-[16px]'>
             <div className='pt-8 pr-12 pl-6'>
                 <div className='w-[70px] h-[70px] flex items-center -ml-8'>
@@ -24,6 +24,9 @@ const Footer = () => {
                      </Link>
                      <Link to="/contact">
                         <li>Contacts </li>
+                    </Link>
+                    <Link to="/waitlist">
+                        <li>Waitlist </li>
                     </Link>
                     {/* <li>Demo</li> */}
                 </ul>
@@ -81,7 +84,7 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='w-[98%] border-t-[1px] flex justify-center items-center pb-6 pt-4 mx-auto h-[10%]'>
+        <div className='w-[98%] border-t-[1px] flex justify-center border-gray-700 pt-8 items-center pb-6 pt-4 mx-auto h-[10%]'>
             <h2 className='text-center text-white font-semibold text-[13px] '>&copy;  SPLITTAS TECHNOLOGY ALL RIGHTS RESERVED. </h2>
         </div>
     </div>

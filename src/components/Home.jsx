@@ -38,8 +38,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-[100%] lg:w-[60%] h-[660px]  flex justify-center scale-75'>
-                <img src="/assets/HomeImg.png" alt="" className='w-auto h-auto ' />
+            <div className='w-[100%] lg:w-[60%] xl:h-[660px] h-[1100px] mb-20 xl:mb-0 flex justify-center lg:scale-105 pt-24'>
+                <img src="/assets/Home3.png" alt="" className='w-auto h-auto ' />
             </div>
         </section>
     </div>
