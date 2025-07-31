@@ -2,11 +2,15 @@ import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faAngleUp, faArrowRightLong, faCaretRight, faMarker } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faCopy } from '@fortawesome/free-regular-svg-icons';
-import { div, h2 } from 'framer-motion/client';
+import { Navigate } from 'react-router-dom';
 import WaitlistHowItWorks from './WaitlistHowItWorks';
+import WaitlistPage from './WaitlistPage';
+import DashboardPage from './DashboardPage';
+import Loading from './Loading';
+import { Route, Routes, useLocation } from 'react-router-dom';
+// ...existing code...
 
-const refcode = "sp00721x";
+
 
 
 
@@ -95,63 +99,64 @@ const Waitlist = () => {
     </div>
   ));
 
+
+  const location = useLocation();
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const checkExistingUser = async () => {
+            try {
+                // In a real app, you might check localStorage or cookies for user session
+                // For this example, we'll check the URL for an email parameter
+                const params = new URLSearchParams(location.search);
+                const email = params.get('email');
+
+                if (email) {
+                    const response = await databases.listDocuments(
+                        databaseId,
+                        usersCollectionId,
+                        [Query.equal('email', email)]
+                    );
+
+                    if (response.total > 0) {
+                        setUser(response.documents[0]);
+                    }
+                }
+            } catch (err) {
+                console.error('Error checking user:', err);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        checkExistingUser();
+    }, [location.search]);
+
+    
   return (
     <div className='mt-[100px]'>
         
-        <div className='w-[100%] h-auto py-16 bg-[#5c07B7]'>
-            <div className='hidden'>
-                <h2 className='text-center text-[25px] lg:text-[55px] font-bold text-white'>Join the wailist.</h2>
-                <form action="" className='flex flex-col justify-center gap-6 w-[100%] items-center mt-8'>
-                    <input type="email" name="" id="" placeholder='Enter your email address' className='w-[70%] lg:w-[47%] h-[50px] bg-transparent border-2 border-white text-white rounded-3xl pl-4 text-[17px] lg:text-[20px] outline-none font-semibold'/>
-                    <input type="email" name="" id="" placeholder='Ref. Code (optional)' className='w-[70%] lg:w-[47%] h-[50px] bg-transparent border-2 border-white  text-white rounded-3xl pl-4 text-[17px] lg:text-[20px] outline-none font-semibold'/>
-                    <button className='w-[70%] lg:w-[47%] mt-4  bg-white h-[50px] rounded-full  text-[20px] outline-none font-bold text-[#5c07B7]'>
-                        Join Waitlist <FontAwesomeIcon icon={faArrowRightLong} />
-                    </button>
-                </form>
-            </div>
-
-        {/* This Section will be displayed after successful registration*/}
-            <div className=''>
-                <div className='flex  justify-center items-center gap-2'>
-                    <h2 className='text-center text-[25px] lg:text-[30px] font-bold text-white'>Your ref code:</h2>
-                    <span className='text-center text-[25px] lg:text-[30px] font-bold text-white'>{refcode}
-                        <button>
-                            <FontAwesomeIcon icon={faCopy} className='ml-2'/>
-                        </button>
-                    </span>
-                </div>
-                <h2 className='text-center text-[25px] lg:text-[55px] font-bold text-white'>Thank you for joining the waitlist!</h2>
-                <p className='text-[20px] lg:text-[28px] font-bold mx-auto lg:mx-0 text-center text-white'>
-                    We'll notify you when our app is ready.
-                </p>
-                <div className='mt-16 flex flex-col items-center'>
-                    <h2 className='text-center text-[20px] font-semibold text-white'>Join our communities</h2>
-                    <ul className='flex gap-4 text-white mx-auto text-[30px] mt-6'>
-                        <li>
-                            <FontAwesomeIcon icon={faDiscord} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faXTwitter} />
-                        </li>
-                    </ul>
-
-                    <div className='flex items-center flex-col'>
-                        <h2 className='text-center text-[20px] font-semibold text-white mt-6'>Follow our social medias below to stay on top of the trend.</h2>
-                        <ul className='flex  items-center gap-4 text-white mx-auto text-[30px] mt-6'>
-                            <li>
-                                <FontAwesomeIcon icon={faFacebook} />
-                            </li>
-                            <li>
-                                <FontAwesomeIcon icon={faXTwitter} />
-                            </li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-
-
+        <div className='w-[100%] flex justify-center items-center  h-auto py-16 bg-[#5c07B7]'>
+             <Routes>
+                <Route
+                    path="/waitlist"
+                    element={
+                        user ? (
+                            <Navigate to="/dashboard" state={{ user }} />
+                        ) : (
+                            <WaitlistPage />
+                        )
+                    }
+                />
+                <Route
+                    path="/waitlist"
+                    element={<DashboardPage user={user} />}
+                />
+                <Route path="*" element={<WaitlistPage />} />
+            </Routes>
         {/* This section will be displayed If email already exists. */}    
-            <div className='flex-col items-center hidden'>
+            {/* <div className='flex-col items-center hidden'>
                 <h2 className='text-center text-[20px] lg:text-[55px] font-bold text-white'>This Email already joined the waitlist.</h2>
                 <div className='flex  justify-center items-center gap-2'>
                     <h2 className='text-center text-[20px] lg:text-[30px] font-bold text-white'>Your ref code:</h2>
@@ -162,7 +167,7 @@ const Waitlist = () => {
                         </button>
                     </span>
                 </div>
-            </div>
+            </div> */}
             
         </div>
 
