@@ -4,16 +4,15 @@ import Request from './Request';
 import About from './About';
 import Services from './Services';
 import HowItWorks from './HowItWorks';
-import WhyChooseus from './Whychooseus';
+import WhyChooseus from './WhyChooseUs';
 import Waitlist from './Waitlist';
 import GetStarted from './GetStarted';
 import Contact from './Contact';
 import Subscribe from './Subscribe';
-import Footer from './Footer';
 
 const Sections = () => {
   return (
-    <div className='w-[100%] overflow-auto'>
+    <div className='w-[100%] overflow-hidden'>
         <Home />
         <Request />
         <About />
@@ -24,7 +23,7 @@ const Sections = () => {
         <GetStarted />
         <Contact />
         <Subscribe />
-        <Footer /> 
+      
     </div>
   )
 }

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faBullseye, faChartArea, faGlobe, faHeadset, faMoneyBillTransfer, faMoneyCheckDollar, faSeedling, faWallet, faWifi } from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
 
 const service = [
     {
@@ -67,22 +68,28 @@ const service = [
 
 
 const servicesection = service.map(services =>
-    <div className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'>
+    <motion.div 
+        className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'
+            initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
+            whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
+            viewport={{ once: false }}
+            transition={{ duration: 1 }}
+        >
         <div className='text-center flex flex-col items-center text-white pt-6'>
-            <span className='text-[20px]'>
+            <span className='text-[30px]'>
                 {services.serviceicon}
             </span>
             <h2 className='text-[17px] font-semibold'>{services.servicename}</h2>
             <p className='text-[15px] w-[90%]'>{services.description}</p>
         </div>
         <div className='w-[80px] h-[2px] bg-white mb-2'></div>
-    </div>
+    </motion.div>
 )
 
 
 const Test = () => {
   return (
-    <div className='w-full mt-20'>
+    <div className='w-full mt-20 pt-[100px]' id="service">
         <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>Our Services</h1>
         <div className='w-[100%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
           {servicesection}

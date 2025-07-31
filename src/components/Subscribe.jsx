@@ -11,7 +11,7 @@ const Subscribe = () => {
                 type="email" 
                 placeholder="Enter your email address"
                 required 
-                className="w-[300px] h-[50px] rounded-3xl pl-4 font-bold text-[18px] outline-none border-none"
+                className="w-[300px] h-[50px] rounded-3xl pl-4 font-bold text-[18px] outline-none border-2 border-transparent focus:border-[#5c07B7] focus:bg-transparent"
                 
             />
             <button 
