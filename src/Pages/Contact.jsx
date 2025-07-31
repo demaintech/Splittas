@@ -6,7 +6,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 
 const Contact = () => {
   return (
-    <div className='w-[100%] mt-[100px] '>
+    <div className='w-[100%] mt-[150px] '>
         {/* <nav className='w-[100%] flex flex-row justify-between '>
             <div className='w-[110px] h-[100px] my-auto flex'>
                 <img src={'/Splittas/assets/brand.jpg'} alt="" className='w-auto h-auto scale-75'/>
@@ -24,32 +24,32 @@ const Contact = () => {
 
         <h2 className='text-center text-[25px] lg:text-[55px] font-bold text-[#5c07B7]'>We'll love to hear from you.</h2>
     
-        <div className='flex flex-col lg:flex-row justify-between items-center'>
-            <div className='w-[100%] lg:w-[50%] h-[460px]  flex justify-center scale-75'>
-                <img src="/assets/waitlist1.jpeg" alt="" className='w-auto h-auto rounded-3xl'/>
+        <div className='flex flex-col lg:flex-row justify-between items-center py-20'>
+            <div className='w-[100%] lg:w-[50%] h-auto flex items-center justify-center '>
+                <img src="/assets/contactus.jpg" alt="" className='w-auto h-auto rounded-3xl scale-105'/>
             </div>
-            <div className='w-[100%] lg:w-[50%]  h-[550px] flex flex-col items-center'>
+            <div className='w-[100%] lg:w-[50%]  h-[750px] flex flex-col items-center mt-24 lg:mt-0'>
                 <h2 className='text-center text-[25px] font-bold text-[#5c07B7] mt-2'>Send us a message.</h2>
-                <form action="" className='w-[90%] mt-4 lg:w-[70%] h-[400px] border-2 flex flex-col items-center gap-4 pt-8 rounded-3xl'>
+                <form action="" className='w-[90%] mt-4 lg:w-[70%] xl:w-[60%] h-[520px] border-2 flex flex-col items-center gap-6 pt-8 rounded-3xl'>
                     <input 
                         type="text"  
                         placeholder='Enter your Full name' 
-                        className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'
+                        className='w-[90%] h-[55px] border-2 rounded-xl pl-4 focus:border-[#5c07B7] focus:outline-none'
                         required
                         />
                     <input 
                         type="email" 
                         placeholder='Enter your Email or phone'  
-                        className='w-[90%] h-[50px] border-2 rounded-3xl pl-4'
+                        className='w-[90%] h-[55px] border-2 rounded-xl pl-4 focus:border-[#5c07B7] focus:outline-none'
                         required
                         />
                     <textarea 
                         type="text" 
                         placeholder='Enter your message...'  
-                        className='w-[90%] h-[150px] border-2 rounded-3xl pl-4 pt-4 pr-4'
+                        className='w-[90%] h-[150px] border-2 rounded-xl pl-4 pt-4 pr-4'
                         required
                         />
-                    <button className='w-[90%] h-[50px] border-2 rounded-3xl bg-[#5c07B7] outline-none border-none text-white text-[19px] font-bold'>Send message</button>
+                    <button className='w-[90%] h-[50px] border-2 rounded-xl bg-[#5c07B7] outline-none border-none text-white text-[19px] font-bold mt-12 focus:border-[#5c07B7] focus:outline-none'>Send message</button>
                 </form>
                 <ul className='flex gap-4 text-[25px] font-bold text-[#5c07B7] mt-4'>
                     <li><FontAwesomeIcon icon={faXTwitter} /></li>
