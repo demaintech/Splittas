@@ -16,11 +16,7 @@ const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
   
-    <motion.div 
-      initial={{ opacity: 0, y: -100 }}           // Start 40px lower and invisible
-      whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
-      viewport={{ once: true }}
-      transition={{ duration: 0.05 }}
+    <div 
       className="w-full fixed h-[100px] bg-white top-0 shadow-lg z-10"
     >
       <nav className="w-[100%] flex flex-row justify-between">
@@ -37,10 +33,7 @@ const Navbar = () => {
             <li>Home</li>
           </NavLink>
 
-          <li className="nav-item dropdown-parent">
-          Our company < FontAwesomeIcon  icon={faAngleDown}/>
-          <ul className="dropdown ">
-            <NavLink to="/about">
+          <NavLink to="/about">
             <li>About <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
           </NavLink>
 
@@ -52,17 +45,14 @@ const Navbar = () => {
             <NavLink to="/waitlist">
             <li>Waitlist <FontAwesomeIcon className="-rotate-45" icon={faArrowRightLong} /></li>
           </NavLink>
-            
-          </ul>
-        </li>
 
-          <HashLink smooth to="/#service">
+          {/* <HashLink smooth to="/#service">
             <li>Services</li>
           </HashLink>
 
           <HashLink smooth to="/#how-it-works">
             <li>How it works</li>
-          </HashLink>
+          </HashLink> */}
 
         </ul>
 
@@ -145,7 +135,7 @@ const Navbar = () => {
         {/* ) : null} */}
         
       </nav>
-    </motion.div>
+    </div>
   );
 };
 

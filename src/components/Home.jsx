@@ -22,7 +22,7 @@ const Home = () => {
                     transition={{ duration: 30 }}
                     > Bills. </span>
                 </motion.h1>
-                <p className='w-[90%] mx-auto xl:mx-0 xl::w-[96%] mt-4 text-gray-600 font-semibold text-sm/6 text-center xl:text-left'><span className='text-gray-500 font-extrabold'>Plan Smarter, Live Better.</span> <br />  Join the waitlist now to secure your chance to participate and start your journey toward smarter money management.</p>
+                <p className='w-[90%] mx-auto xl:mx-0 xl::w-[96%] mt-4 text-gray-600 font-semibold text-sm/6 text-center xl:text-left'><span className='text-gray-500 font-extrabold'>Plan Smarter, Live Better.</span> <br />  Join the waitlist now to secure your chance to participate and start your journey toward smarter money management. Manage your money without borders. Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, and grow your savings through smart, goal-based plans — all in one place. Whether you're a freelancer, traveler, or global entrepreneur, you’ll have full control over your finances with secure, intuitive tools built for the modern world. Join the waitlist today and be among the first to experience banking without limits.</p>
                 <div className='flex flex-col sm:flex-row w-[100%] items-center xl:justify-start justify-center gap-4 mt-8 mx-auto xl::mx-0'>
                     <Link to="/waitlist">
                         <button className='w-[120px] lg:w-[150px] h-[40px] lg:h-[45px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[13px] lg:text-[17px]'>Join Waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
