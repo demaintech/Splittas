@@ -18,14 +18,14 @@ const HowItWorks = () => {
         <div className='flex flex-col '>
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src="/assets/how1.jpeg" alt="" className='w-auto h-auto rounded-3xl'
+                    <img src="/assets/how1.jpg" alt="" className='w-auto h-auto rounded-3xl'
                     // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
                     // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
                     // viewport={{ once: false }}
                     // transition={{ duration: 1 }}
                     />
                 </div>
-                <motion.div className='w-[100%] lg:w-[50%] my-auto pl-4'
+                <motion.div className='w-[100%] lg:w-[50%] flex flex-col gap-4 my-auto pl-4 text-center lg:text-left'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
@@ -33,7 +33,7 @@ const HowItWorks = () => {
                 >
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>01</h4>
                     <h1 className='text-[29px] font-bold'>Create your account</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 font-semibold text-gray-600'>Getting started is quick and easy. Simply signup using your email or phone number, and set a secure password. Once you're in, you'll be welcomed with a smooth onboarding experience that guides you step by step.</p>
+                    <p className='w-[85%] mx-auto lg:mx-0  lg:w-[60%] text-[18px]/7 font-semibold text-gray-600'>Getting started is quick and easy. Simply signup using your email or phone number, and set a secure password. Once you're in, you'll be welcomed with a smooth onboarding experience that guides you step by step.</p>
                     <Link to="/waitlist">
                         <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     </Link>
@@ -41,7 +41,7 @@ const HowItWorks = () => {
             </div>
 
             <div className='w-full flex flex-col-reverse lg:flex-row justify-center'>
-                <motion.div className='w-[100%] lg:w-[50%] my-auto text-left pl-4 lg:pl-24'
+                <motion.div className='w-[100%] lg:w-[50%] flex flex-col gap-4 my-auto  pl-4 lg:pl-24 text-center lg:text-left'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
@@ -49,14 +49,14 @@ const HowItWorks = () => {
                 >
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>02</h4>
                     <h1 className='text-[29px] font-bold'>Open an account in any currency</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Our app gives you the flexibility to open a financial account in your preferred currency - whether it's USD, EUR, GBP, NGN, or others. This  feature makes it easier to manage your finances locally or internaionally all from one place.</p>
+                    <p className='w-[85%] mx-auto lg:mx-0  lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Our app gives you the flexibility to open a financial account in your preferred currency - whether it's USD, EUR, GBP, NGN, or others. This  feature makes it easier to manage your finances locally or internaionally all from one place.</p>
                     <Link to="/waitlist">
                         <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     </Link>
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src="assets/how2.jpeg" alt="" className='w-auto h-auto rounded-3xl'
+                    <img src="assets/how2.jpg" alt="" className='w-auto h-auto rounded-3xl'
                         // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
                         // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
                         // viewport={{ once: false }}
@@ -68,14 +68,14 @@ const HowItWorks = () => {
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
                  
-                    <img src="/assets/how3.jpeg" alt="" className='w-auto h-auto rounded-3xl'
+                    <img src="/assets/how3.jpg" alt="" className='w-auto h-auto rounded-3xl'
                         // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
                         // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
                         // viewport={{ once: false }}
                         // transition={{ duration: 1 }}
                     />
                 </div>
-                <motion.div className='w-[100%] lg:w-[50%] my-auto pl-4'
+                <motion.div className='w-[100%] lg:w-[50%] flex flex-col gap-4 my-auto pl-4 text-center lg:text-left'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
@@ -83,7 +83,7 @@ const HowItWorks = () => {
                 >
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>03</h4>
                     <h1 className='text-[29px] font-bold'>Set and Manage Savings Plan</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Define your financial goals- whether it's savings for a trip, emergency funds, or big purchase. You can create multiple savings plans, set targets amounts, deadline, and track your progress overtime. We also send friendly reminders and insights to keep you motivated and consistend.</p>
+                    <p className='w-[85%] mx-auto lg:mx-0 lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Define your financial goals- whether it's savings for a trip, emergency funds, or big purchase. You can create multiple savings plans, set targets amounts, deadline, and track your progress overtime. We also send friendly reminders and insights to keep you motivated and consistend.</p>
                     <Link to="/waitlist">
                         <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     </Link>
@@ -91,7 +91,7 @@ const HowItWorks = () => {
             </div>
 
             <div className='w-full flex flex-col-reverse lg:flex-row justify-center'>
-                <motion.div className='w-[100%] lg:w-[50%] my-auto text-left pl-4 lg:pl-24'
+                <motion.div className='w-[100%] lg:w-[50%] flex flex-col gap-4 my-auto text-center lg:text-left pl-4 lg:pl-24'
                     initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: false }}
@@ -99,14 +99,14 @@ const HowItWorks = () => {
                 >
                     <h4 className='text-[25px] font-bold text-[#27AAE1]'>04</h4>
                     <h1 className='text-[29px] font-bold'>Access Powerful Financial Tools</h1>
-                    <p className='w-[95%] lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Once your account is set up, you'll unlock all app features. Access personalized financial tips, budgets planning tools, spending analysis, and smart suggestions tailored to your habits - everything you need to make better money decisions and build stronger financial future.</p>
+                    <p className='w-[85%] mx-auto lg:mx-0  lg:w-[60%] text-[18px]/7 text-gray-600 font-semibold'>Once your account is set up, you'll unlock all app features. Access personalized financial tips, budgets planning tools, spending analysis, and smart suggestions tailored to your habits - everything you need to make better money decisions and build stronger financial future.</p>
                     <Link to="/waitlist">
                         <button className='w-[150px] h-[45px] bg-[#5c07B7] rounded-3xl text-white font-bold text-[17px] mt-4'>Join waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     </Link>
                 </motion.div>
 
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
-                    <img src="/assets/how4.jpeg" alt="" className='w-auto h-auto rounded-3xl'
+                    <img src="/assets/how4.jpg" alt="" className='w-auto h-auto rounded-3xl'
                     // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
                     // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
                     // viewport={{ once: faBullseye }}

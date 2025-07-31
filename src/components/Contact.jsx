@@ -12,10 +12,10 @@ const Contact = () => {
         viewport={{ once: false }}
         transition={{ duration: 1 }}
         >
-        <div className="bg-black bg-opacity-60 w-[100%] h-[100%] py-8 rounded-3xl flex lg:flex-row justify-center items-center  lg:justify-between">
-        <div className=""></div>
+        <div className="bg-black bg-opacity-60 w-[100%] h-[100%] py-8 rounded-3xl flex justify-center items-center ">
+        {/* <div className=""></div> */}
         
-        <div className="flex flex-col text-center lg:w-[60%] justify-center items-center gap-8">
+    <div className="flex flex-col text-center lg:w-[60%] justify-center items-center gap-8">
         <h1 className='text-center text-[27px] lg:text-[55px] font-bold '>Get in touch with us.</h1>
         <p className='text-center mx-auto w-[80%] lg:w-[60%] text-[17px] font-semibold'>Got anything to tell us? We'll be glad to hear from you.</p>
         <div className='flex flex-col lg:flex-row text-center w-full justify-between items-center'>

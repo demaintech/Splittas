@@ -75,8 +75,8 @@ a.active{
 
 
 .contactImg{
-  background: url('/public/assets/deal.jpeg');
-  /* background-size: cover; */
+  background: url('/public/assets/contact.jpeg');
+  background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
