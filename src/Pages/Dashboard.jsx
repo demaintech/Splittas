@@ -93,7 +93,7 @@ const Dashboard = ({ user }) => {
                         <FontAwesomeIcon icon={faDiscord} />
                     </li>
                 </a>
-                <a href='href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target="_blank"'>
+                <a href='https://discord.gg/bPcmtB2SC2" target="_blank"'>
                     <li>
                         <FontAwesomeIcon icon={faXTwitter} />
                     </li>
