@@ -98,7 +98,7 @@ const WaitlistForm = ({ onSuccess }) => {
               placeholder='Enter your email address' 
               className='w-[100%] h-[55px] bg-transparent border-2 border-white text-white rounded-xl pl-4 text-[17px] lg:text-[20px] outline-none font-semibold'/>
             <input 
-              type="email" 
+              type="text" 
               // name="" 
               id="referralId" 
               onChange={(e) => setReferralId(e.target.value)}
