@@ -55,7 +55,7 @@ const HowItWorks = () => {
                     </Link>
                 </motion.div>
 
-                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
+                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75 mt-32 lg:mt-0'>
                     <img src="assets/how2.jpg" alt="" className='w-auto h-auto rounded-3xl'
                         // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
                         // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
@@ -66,7 +66,7 @@ const HowItWorks = () => {
             </div>
 
             <div className='w-full flex flex-col lg:flex-row justify-center'>
-                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
+                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75 mt-32 lg:mt-0'>
                  
                     <img src="/assets/how3.jpg" alt="" className='w-auto h-auto rounded-3xl'
                         // initial={{ opacity: 0, x: -400 }}           // Start 40px lower and invisible
@@ -105,7 +105,7 @@ const HowItWorks = () => {
                     </Link>
                 </motion.div>
 
-                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>
+                <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75 mt-32 lg:mt-0'>
                     <img src="/assets/how4.jpg" alt="" className='w-auto h-auto rounded-3xl'
                     // initial={{ opacity: 0, x: 400 }}           // Start 40px lower and invisible
                     // whileInView={{ opacity: 1, x: 0 }}        // Animate to visible and y=0
