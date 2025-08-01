@@ -88,23 +88,31 @@ const Dashboard = ({ user }) => {
         <div className='mt-16 flex flex-col items-center'>
             <h2 className='text-center text-[25px] font-bold text-white'>Join our communities</h2>
             <ul className='flex gap-4 text-white mx-auto text-[30px] mt-6'>
-                <li>
-                    <FontAwesomeIcon icon={faDiscord} />
-                </li>
-                <li>
-                    <FontAwesomeIcon icon={faXTwitter} />
-                </li>
+                <a href='https://discord.gg/k2ayJvzp'>
+                    <li>
+                        <FontAwesomeIcon icon={faDiscord} />
+                    </li>
+                </a>
+                <a href='href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target="_blank"'>
+                    <li>
+                        <FontAwesomeIcon icon={faXTwitter} />
+                    </li>
+                </a>
             </ul>
         
             <div className='flex items-center flex-col'>
                 <h2 className='text-center text-[25px] font-bold text-white mt-6'>Follow our social medias below to stay on top of the trend.</h2>
                 <ul className='flex  items-center gap-4 text-white mx-auto text-[30px] mt-6'>
-                    <li>
-                        <FontAwesomeIcon icon={faFacebook} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faXTwitter} />
-                    </li>
+                    <a href='https://www.facebook.com/profile.php?id=61574679375818'>
+                        <li>
+                            <FontAwesomeIcon icon={faFacebook} />
+                        </li>
+                    </a>
+                    <a href='href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target="_blank"'>
+                        <li>
+                            <FontAwesomeIcon icon={faXTwitter} />
+                        </li>
+                    </a>
             </ul>
             </div>
         </div>

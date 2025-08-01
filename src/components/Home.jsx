@@ -31,9 +31,15 @@ const Home = () => {
                         <h2 className='text-[17px] lg:text-[20px] font-bold text-[#5c07B7]'>Contact us</h2>
                         <div className='w-[3px] bg-[#5c07B7] h-[25px]'></div>
                         <ul className='flex gap-2 text-[#5c07B7] text-[18px] font-bold'>
-                            <li><FontAwesomeIcon icon={faXTwitter} /></li>
-                            <li><FontAwesomeIcon icon={faFacebook} /></li>
-                            <li><FontAwesomeIcon icon={faEnvelope} /></li>
+                            <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
+                                <li><FontAwesomeIcon icon={faXTwitter} /></li>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61574679375818" target='_blank'>
+                                <li><FontAwesomeIcon icon={faFacebook} /></li>
+                            </a>
+                            <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
+                                <li><FontAwesomeIcon icon={faEnvelope} /></li>
+                            </a>
                         </ul>
                     </div>
                 </div>
