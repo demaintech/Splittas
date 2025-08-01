@@ -58,7 +58,7 @@ const Footer = () => {
                         <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
                             <li><FontAwesomeIcon icon={faXTwitter} /></li>
                         </a>
-                        
+
                         <a href='https://www.facebook.com/profile.php?id=61574679375818'>
                             <li><FontAwesomeIcon icon={faFacebook} /></li>
                         </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                             <li><FontAwesomeIcon icon={faInstagram} /></li>
                         </a>
                         
-                        <a href='https://discord.gg/k2ayJvzp'>
+                        <a href='https://discord.gg/bPcmtB2SC2'>
                             <li><FontAwesomeIcon icon={faDiscord} /></li>
                         </a>
                     </ul>
