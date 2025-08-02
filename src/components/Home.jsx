@@ -13,22 +13,22 @@ const Home = () => {
     {/* Hero */}
 
         <section className='w-full flex flex-col items-center xl:flex-row justify-between mt-24'>
-            <div className='w-[100%] lg:w-[50%] md:pl-14 xl:pl-24 pt-8'>
+            <div className='w-[100%] xl:w-[50%]  xl:pl-24  pt-[25vh] xl:pt-0 xl:mt-0 flex flex-col items-center xl:items-start'>
                 <motion.h1 
-                    className='text-[35px] xl:text-[65px] font-extrabold text-center xl:text-left'>Split the<span className='text-[#5c07B7]'> Stress, </span><br /> Not just the <span className='text-[#5c07B7]'
+                    className='text-[45px] xl:text-[65px] font-extrabold text-center xl:text-left'>Split the<span className='text-[#5c07B7]'> Stress, </span><br /> Not just the <span className='text-[#5c07B7]'
                     initial={{ opacity: 0, y: 40 }}           // Start 40px lower and invisible
                     whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
                     viewport={{ once: true }}
                     transition={{ duration: 30 }}
                     > Bills. </span>
                 </motion.h1>
-                <p className='w-[90%] mx-auto xl:mx-0 xl::w-[96%] mt-4 text-gray-600 font-semibold text-sm/6 text-center xl:text-left'><span className='text-gray-500 font-extrabold'>Plan Smarter, Live Better.</span> <br />  Join the waitlist now to secure your chance to participate and start your journey toward smarter money management. Manage your money without borders. Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, and grow your savings through smart, goal-based plans — all in one place. Whether you're a freelancer, traveler, or global entrepreneur, you’ll have full control over your finances with secure, intuitive tools built for the modern world. Join the waitlist today and be among the first to experience banking without limits.</p>
-                <div className='flex flex-col sm:flex-row w-[100%] items-center xl:justify-start justify-center gap-4 mt-8 mx-auto xl::mx-0'>
+                <p className='w-[85%] mx-auto xl:mx-0 lg:w-[60%] xl:w-[96%] mt-4 text-gray-600 font-semibold text-sm/7 text-center xl:text-left'><span className='text-gray-500 font-extrabold'>Plan Smarter, Live Better.</span> <br />  Join the waitlist now to secure your chance to participate and start your journey toward smarter money management. Manage your money without borders. Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, and grow your savings through smart, goal-based plans — all in one place. </p>
+                <div className='flex flex-col sm:flex-row w-[100%] items-center xl:justify-start justify-center gap-6 mt-8 mx-auto xl::mx-0'>
                     <Link to="/waitlist">
                         <button className='w-[120px] lg:w-[150px] h-[40px] lg:h-[45px] bg-[#5c07B7] rounded-3xl text-white font-semibold text-[13px] lg:text-[17px]'>Join Waitlist <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></button>
                     </Link>
                     <div className='flex items-center gap-2 my-auto '>
-                        <h2 className='text-[17px] lg:text-[20px] font-bold text-[#5c07B7]'>Contact us</h2>
+                        <h2 className='text-[17px] lg:text-[20px] font-bold text-black'>Contact us</h2>
                         <div className='w-[3px] bg-[#5c07B7] h-[25px]'></div>
                         <ul className='flex gap-2 text-[#5c07B7] text-[18px] font-bold'>
                             <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
