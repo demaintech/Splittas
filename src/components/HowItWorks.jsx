@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRightLong, faBullseye } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion";
 
 const HowItWorks = () => {
@@ -11,10 +11,11 @@ const HowItWorks = () => {
             whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'
+            className='text-center font-bold text-[45px] lg:text-[55px] '
         >
         How it works
         </motion.h1>
+        <p className='w-[85%] text-[15px] font-medium mx-auto text-center'>Our app lets you ceate real bank accounts in multiple currencies, send and receive moneey instantly, grow your savings through smart, goal based plans, and many more-with all in one place.</p>
         <div className='flex flex-col '>
             <div className='w-full flex flex-col lg:flex-row justify-center'>
                 <div className='w-[100%] lg:w-[50%] h-[460px] flex justify-center scale-75'>

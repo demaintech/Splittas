@@ -69,18 +69,18 @@ const service = [
 
 const servicesection = service.map(services =>
     <motion.div 
-        className='w-[95%] mx-auto mt-8 h-[180px] bg-[#5c07B7] rounded-xl flex flex-col justify-between items-center'
+        className='w-[95%] mx-auto mt-8 h-[180px] bg-[#fff] shadow-md border-[2px] border-blue-100 rounded-xl flex flex-col justify-between items-center'
             initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
             whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
             viewport={{ once: false }}
             transition={{ duration: 1 }}
         >
-        <div className='text-center flex flex-col items-center text-white pt-6'>
-            <span className='text-[30px]'>
+        <div className='text-center flex flex-col items-center  pt-6'>
+            <span className='text-[40px] text-[#5c07B7]'>
                 {services.serviceicon}
             </span>
-            <h2 className='text-[17px] font-semibold'>{services.servicename}</h2>
-            <p className='text-[15px] w-[90%]'>{services.description}</p>
+            <h2 className='text-[17px] font-semibold text-black'>{services.servicename}</h2>
+            <p className='text-[15px] w-[90%] text-black'>{services.description}</p>
         </div>
         <div className='w-[80px] h-[2px] bg-white mb-2'></div>
     </motion.div>
@@ -90,8 +90,9 @@ const servicesection = service.map(services =>
 const Test = () => {
   return (
     <div className='w-full mt-20 pt-[100px]' id="service">
-        <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>Our Services</h1>
-        <div className='w-[100%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
+        <h1 className='text-center font-bold text-[45px] lg:text-[55px] '>Our Services</h1>
+        <p className='text-center w-[85%] md:w-[60%] lg:[50%] xl:w-[40%] mx-auto text-[12px] font-semibold'>Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, grow your savings through smart goal based plans, and te many more-all in one place.</p>
+        <div className='w-[100%] mt-24  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
           {servicesection}
       </div>
     </div>
