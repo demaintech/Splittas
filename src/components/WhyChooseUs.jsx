@@ -5,9 +5,10 @@ import { faHeadset } from '@fortawesome/free-solid-svg-icons'
 const WhyChooseus = () => {
   return (
     <div className='w-full mt-20 pb-24'>
-        <h1 className='text-center font-bold text-[45px] lg:text-[55px] text-[#5c07B7]'>Why Choose Us?</h1>
+        <h1 className='text-center font-bold text-[45px] lg:text-[55px]'>Why Choose Us?</h1>
+        <p className='w-[85%] md:w-[60%] lg:[50%] xl:w-[40%]  text-[15px] font-semibold mx-auto text-center'>Our app lets you ceate real bank accounts in multiple currencies, send and receive moneey instantly, grow your savings through smart, goal based plans, and many more-with all in one place.</p>
 
-        <div className='flex flex-col lg:flex-row items-center lg:items-start w-[100%] justify-center mt-12'>
+        <div className='flex flex-col lg:flex-row items-center lg:items-start w-[100%] justify-center mt-24'>
             <div className='flex flex-col w-[240px] h-auto'>
                 <div className='w-[120px] flex justify-center items-center mx-auto h-[120px] border-2 border-[#5c07B7] rounded-full'>
                     <span className='text-[40px] text-[#27AAE1] font-semibold'>$</span>

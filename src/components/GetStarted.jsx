@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const GetStarted = () => {
   return (
-    <div className='h-auto py-16 flex flex-col lg:flex-row justify-between w-full mt-16 pb-16 items-center'>
+    <div className='h-auto py-16 flex flex-col lg:flex-row justify-between w-full pb-16 items-center'>
         <div className='w-[100%] lg:w-[50%] flex flex-col pl-4 lg:pl-12'>
             <h2 className='text-[35px] lg:text-[55px] text-center lg:text-left font-bold mx-auto lg:mx-0'><span className='text-[#5c07B7]'>Plan</span> and Manage <br /> your <span className='text-[#5c07B7]'>Finances</span> with us.</h2>
             <p className='text-[20px] lg:text-[28px]  font-bold mx-auto lg:mx-0'>Download our app and get started <FontAwesomeIcon className='-rotate-45' icon={faArrowRightLong} /></p>

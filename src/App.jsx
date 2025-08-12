@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='bg-[#f6f6f6]'>
       <LandingPage />
       {/* <Campaign /> */}
 
@@ -18,7 +18,7 @@ const App = () => {
         </Routes>
 
     {/* Customer Support Container */}
-      <div className='w-full h-[100vh] -z-50 fixed  top-0 bg-transparent flex items-end'>
+      {/* <div className='w-full h-[100vh] -z-50 fixed  top-0 bg-transparent flex items-end'>
         <div className='w-[100%] h-auto relative z-50'>
           <div className='ml-[75%] lg:ml-[90%] mb-[30px]'>
             <button 
@@ -28,7 +28,7 @@ const App = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

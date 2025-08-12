@@ -1,20 +1,25 @@
 import { faDiscord, faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faArrowRightLong, faCopy, faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
     // [#0A3161]
   return (
-    <div className='w-full h-auto bg-gray-900 flex flex-col justify-between py-16 p-4 '>
-        <div className='w-[100%] flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-8 lg:pl-0 text-[16px]'>
-            <div className='pt-8 pr-12 pl-6'>
-                <div className='w-[70px] h-[70px] flex items-center -ml-8'>
-                    <img src="/assets/footer.png" alt="" />
-                    <h2 className='text-[26px] text-white font-bold ml-2'>Splittas</h2>
+    <div className='w-full h-auto bg-gray-900 flex flex-col justify-between '>
+        <div className='xl:pl-20 pl-12 xl:pr-20 pr-12 w-full  flex flex-row justify-between items-center'>
+            <div className='w-[170px] h-[170px] flex items-center -ml-8'>
+                <img src="/assets/FooterLogo.png" alt="" className='scale-105 w-auto h-auto'/>
+                    {/* <h2 className='text-[26px] text-white font-bold ml-2'>Splittas</h2> */}
                 </div>
-            </div>
+                <Link to="/#home">
+                    <div className='w-[50px] h-[50px] flex justify-center items-center rounded-full bg-white'>
+                        <img src="/assets/btn.png" alt="" className='-rotate-90'/>
+                    </div>
+                </Link>
+        </div>
+        <div className='md::w-[55%] md::mx-auto flex flex-col lg:flex-row lg:justify-evenly pl-4 pb-12 lg:pl-0 text-[16px]'>
+            
             <div className='pt-8'>
                 <ul className='flex flex-col gap-2 text-white '>
                         <li className='font-bold'>Company</li>
@@ -49,10 +54,10 @@ const Footer = () => {
             <div>
                 <ul className='flex flex-col gap-2 pt-8 text-white '>
                     <li className='font-bold'>Contacts</li>
-                    <li className='mt-4'>(+234) 913 363 6596</li>
-                    <li className='mt-2'>(+234) 814 150 0971</li>
+                    <li className='mt-4 text-blue-600'>(+234) 913 363 6596</li>
+                    <li className='mt-2 text-blue-600'>(+234) 814 150 0971</li>
                     <li>Abia State, Nigeria.</li>
-                    <li className='mt-4'>Inquires</li>
+                    <li className='mt-4 font-bold'>Inquires</li>
                     <li>splittastechnology@gmail.com</li>
                     <ul className='flex gap-4 text-[20px] font-bold text-white mt-4'>
                         <a href="https://x.com/SplittasTech?t=Sz7beze2KkvC3IFD-FDfcg&s=09" target='_blank'>
@@ -91,8 +96,8 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className='w-[98%] border-t-[1px] flex justify-center border-gray-700 pt-8 items-center pb-6 pt-4 mx-auto h-[10%]'>
-            <h2 className='text-center text-white font-semibold text-[13px] '>&copy;  SPLITTAS TECHNOLOGY ALL RIGHTS RESERVED. </h2>
+    <div className='w-[100%] bg-white border-t-[1px] flex justify-center  pt-8 items-center pb-6  h-[100px]'>
+            <h2 className='text-center font-bold text-[13px] '>&copy;  SPLITTAS TECHNOLOGY ALL RIGHTS RESERVED. </h2>
         </div>
     </div>
   )

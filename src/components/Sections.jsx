@@ -1,28 +1,28 @@
-import React from 'react'
+import React from 'react';  
 import Home from './Home';
 import Request from './Request';
-import About from './About';
 import Services from './Services';
-import HowItWorks from './HowItWorks';
 import WhyChooseus from './WhyChooseUs';
-import Waitlist from './Waitlist';
-import GetStarted from './GetStarted';
 import Contact from './Contact';
 import Subscribe from './Subscribe';
+import AboutWaitlist from './AboutWaitlist';
+import HowitWorksNew from './HowitWorksNew';
+import WhyJoinWaitlist from './WhyJoinWaitlist';
+import GetStartedNew from './GetStartedNew';
 
 const Sections = () => {
   return (
     <div className='w-[100%] overflow-hidden'>
         <Home />
+        <AboutWaitlist />
         <Request />
-        <About />
         <Services />
-        <HowItWorks />
+        <HowitWorksNew />
         <WhyChooseus />
-        <Waitlist />
-        <GetStarted />
+        <WhyJoinWaitlist />
+        <GetStartedNew />
         <Contact />
-        <Subscribe />
+        <Subscribe /> 
       
     </div>
   )
