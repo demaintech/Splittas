@@ -69,7 +69,7 @@ const service = [
 
 const servicesection = service.map(services =>
     <motion.div 
-        className='w-[95%] mx-auto mt-8 h-[180px] bg-[#fff] shadow-md border-[2px] border-blue-100 rounded-xl flex flex-col justify-between items-center'
+        className='w-[95%] mx-auto mt-8 h-[200px] bg-[#fff] shadow-md shadow-gray-100 border-[2px] border-blue-100 rounded-xl flex flex-col justify-between items-center'
             initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
             whileInView={{ opacity: 1, y: 0 }}        // Animate to visible and y=0
             viewport={{ once: false }}
@@ -79,8 +79,8 @@ const servicesection = service.map(services =>
             <span className='text-[40px] text-[#5c07B7]'>
                 {services.serviceicon}
             </span>
-            <h2 className='text-[17px] font-semibold text-black'>{services.servicename}</h2>
-            <p className='text-[15px] w-[90%] text-black'>{services.description}</p>
+            <h2 className='text-[20px] font-bold text-black'>{services.servicename}</h2>
+            <p className='text-[15px]  font-semibold text-black w-[70%]'>{services.description}</p>
         </div>
         <div className='w-[80px] h-[2px] bg-white mb-2'></div>
     </motion.div>
@@ -89,10 +89,10 @@ const servicesection = service.map(services =>
 
 const Test = () => {
   return (
-    <div className='w-full mt-20 pt-[100px]' id="service">
-        <h1 className='text-center font-bold text-[45px] lg:text-[55px] '>Our Services</h1>
-        <p className='text-center w-[85%] md:w-[60%] lg:[50%] xl:w-[40%] mx-auto text-[12px] font-semibold'>Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, grow your savings through smart goal based plans, and te many more-all in one place.</p>
-        <div className='w-[100%] mt-24  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
+    <div className='w-full mt-20 ' id="service">
+        <h1 className='text-center font-extrabold text-[45px] lg:text-[55px] '>Our Services</h1>
+        <p className='text-center w-[90%] md:w-[60%] lg:[50%] xl:w-[40%] mx-auto text-[12px] font-semibold'>Our app lets you create real bank accounts in multiple currencies, send and receive money instantly, grow your savings through smart, goal based plans, and te many more-all in one place.</p>
+        <div className='w-[100%] mt-12  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 px-auto'>
           {servicesection}
       </div>
     </div>
