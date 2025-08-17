@@ -6,10 +6,10 @@ import React from 'react';
 const Footer = () => {
     // [#0A3161]
   return (
-    <div className='w-full h-auto bg-gray-900 flex flex-col justify-between '>
+    <div className='w-full h-auto bg-[#060130] flex flex-col justify-between '>
         <div className='xl:pl-20 pl-12 xl:pr-20 pr-12 w-full  flex flex-row justify-between items-center'>
             <div className='w-[170px] h-[170px] flex items-center -ml-8'>
-                <img src="/assets/FooterLogo.png" alt="" className='scale-105 w-auto h-auto'/>
+                <img src="/assets/FooterLogo.png" alt="" className='scale-125 w-auto h-auto'/>
                     {/* <h2 className='text-[26px] text-white font-bold ml-2'>Splittas</h2> */}
                 </div>
                 <Link to="/#home">

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <main className="w-full h-auto py-24  bg-gradient-to-tr from-blue-400 via-blue-900 to-[#5c07B7] -mt-12 -z-10">
+    <main className="w-full h-auto py-12  bg-gradient-to#-tr from-blue-400 via-blue-900 to-[#5c07B7] -mt-12 -z-50">
     <motion.div 
         className='w-[95%] mx-auto rounded-3xl bg-[#01042e] mt-12   text-white h-[700px] lg:h-[620px]'
         initial={{ opacity: 0, y: 200 }}           // Start 40px lower and invisible
